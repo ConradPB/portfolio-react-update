@@ -1,35 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank" rel='noreferrer'>
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank" rel='noreferrer'>
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="App">
+      <AppBar position="static">
+        <Toolbar>
+          <Typography variant="h6">
+            Conrad Bugingo
+          </Typography>
+          <Button color="inherit" href="#work">Work</Button>
+        </Toolbar>
+      </AppBar>
+      <section id='welcome-section'>
+        <h1>Hello. My name is Conrad Bugingo. Welcome.</h1>
+      </section>
+      <section id='projects'>
+        <h2>WORK</h2>
+        <div className='project-tile'></div>
+      </section>
+      <a href='https://github.com/G-rizz' id='profile-link' target='_blank' rel='noreferrer'>GitHub</a>
+    </div>
+  );
 }
 
-export default App
+export default App;
+
