@@ -14,7 +14,7 @@ function App() {
         </Toolbar>
       </AppBar>
       <section id='welcome-section'>
-        <h1>Hello. My name is Conrad Bugingo. Welcome.</h1>
+        <h1>Hello. My name is Conrad Bugingo. Welcome to my website.</h1>
       </section>
       <section id='projects'>
         <h2>WORK</h2>
