@@ -4,13 +4,13 @@ import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 
 function App() {
   return (
-    <div className="App">
-      <AppBar position="static">
+    <div className='App'>
+      <AppBar position='static'>
         <Toolbar>
-          <Typography variant="h6">
+          <Typography variant='h6'>
             Conrad Bugingo
           </Typography>
-          <Button color="inherit" href="#work">Work</Button>
+          <Button color='inherit' href='#work'>Work</Button>
         </Toolbar>
       </AppBar>
       <section id='welcome-section'>
