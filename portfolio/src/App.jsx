@@ -10,13 +10,13 @@ function App() {
           <Typography variant='h6'>
             Conrad Bugingo
           </Typography>
-          <Button color='inherit' href='#work'>Work</Button>
+          <Button color='' href='#work'>Work</Button>
         </Toolbar>
       </AppBar>
       <section id='welcome-section'>
         <h1>Hello. My name is Conrad Bugingo. Welcome to my website.</h1>
       </section>
-      <section id='projects'>
+      <section id=''>
         <h2>WORK</h2>
         <div className='project-tile'></div>
       </section>
