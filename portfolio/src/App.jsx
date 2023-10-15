@@ -2,7 +2,7 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 
-function App(){
+function App() {
   return (
     <div className='App'>
       <AppBar position='static'>
@@ -20,7 +20,7 @@ function App(){
         <h2>WORK</h2>
         <div className='project-tile'></div>
       </section>
-      <a href='https://github.com/G-rizz' id='profile-link' target='_blank' rel='noreferrer'></a>
+      <a href='https://github.com/G-rizz' id='profile-link' target='_blank' rel='noreferrer'>GitHub</a>
     </div>
   );
 }
