@@ -7,7 +7,7 @@ function App() {
     <div className='App'>
       <AppBar position='static'>
         <Toolbar>
-          <Typography variant='h6'>
+          <Typography >
             Conrad Bugingo
           </Typography>
           <Button color='' href='#work'>Work</Button>
