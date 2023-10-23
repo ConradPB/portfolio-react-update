@@ -6,8 +6,8 @@ function App() {
   return (
     <div className='App'>
       <AppBar position='static'>
-        <Toolbar>
-          <Typography >
+        <Toolbar>c
+          <Typography variant='h6'>
             Conrad Bugingo
           </Typography>
           <Button color='' href='#work'>Work</Button>
