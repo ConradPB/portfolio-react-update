@@ -1,74 +1,29 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
-import { AppBar, Toolbar, Typography, Button, Container } from '@mui/material';
+import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 
 function App() {
   return (
-    <div className="App">
-      {/* Navigation Bar */}
-      <AppBar position="static" color="primary">
+    <div className='App'>
+      <AppBar position='static'>
         <Toolbar>
-          <Typography variant="h6" style={{ flexGrow: 1 }}>
+          <Typography variant='h6'>
             Conrad Bugingo
           </Typography>
-          <Button color="inherit" href="#about">About</Button>
-          <Button color="inherit" href="#work">Work</Button>
-          <Button color="inherit" href="#contact">Contact</Button>
+          <Button color='' href='#work'>Work</Button>
         </Toolbar>
       </AppBar>
-
-      {/* Welcome Section */}
-      <section id="welcome-section" className="section welcome">
-        <Container>
-          <h1>Hello, I’m Conrad Bugingo</h1>
-          <p>A passionate developer building creative solutions.</p>
-        </Container>
+      <section id='welcome-section'>
+        <h1>Hello. My name is Conrad Bugingo. Welcome to my website.</h1>
       </section>
-
-      {/* About Section */}
-      <section id="about" className="section">
-        <Container>
-          <h2>About Me</h2>
-          <p>
-            I’m a developer with experience in React, JavaScript, and modern web technologies. 
-            I love solving problems and creating user-friendly applications.
-          </p>
-        </Container>
+      <section id=''>
+        <h2>WORK</h2>
+        <div className='project-tile'></div>
       </section>
-
-      {/* Work Section */}
-      <section id="work" className="section">
-        <Container>
-          <h2>Work</h2>
-          <div className="projects-grid">
-            <div className="project-tile">
-              <h3>Project 1</h3>
-              <p>A brief description of your project.</p>
-              <Button variant="outlined" href="#">View Project</Button>
-            </div>
-            <div className="project-tile">
-              <h3>Project 2</h3>
-              <p>A brief description of your project.</p>
-              <Button variant="outlined" href="#">View Project</Button>
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      {/* Contact Section */}
-      <section id="contact" className="section">
-        <Container>
-          <h2>Contact</h2>
-          <p>Feel free to reach out!</p>
-          <div>
-            <Button variant="contained" href="mailto:your.email@example.com">Email Me</Button>
-            <Button variant="outlined" href="https://github.com/G-rizz" target="_blank" rel="noreferrer">
-              GitHub
-            </Button>
-          </div>
-        </Container>
-      </section>
+      <a href='https://github.com/G-rizz' id='profile-link' target='_blank' rel='noreferrer'>GitHub</a>
     </div>
   );
 }
 
 export default App;
+
