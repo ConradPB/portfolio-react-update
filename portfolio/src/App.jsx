@@ -6,7 +6,7 @@ function App() {
   return (
     <div className='App'>
       <AppBar position='static'>
-        <Toolbar>c
+        <Toolbar>
           <Typography variant='h6'>
             Conrad Bugingo
           </Typography>
