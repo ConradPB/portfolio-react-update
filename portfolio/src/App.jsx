@@ -1,3 +1,4 @@
+import React from 'react';
 import { AppBar, Toolbar, Typography, Button, Container } from '@mui/material';
 
 function App() {
@@ -59,7 +60,7 @@ function App() {
           <h2>Contact</h2>
           <p>Feel free to reach out!</p>
           <div>
-            <Button variant="contained" href="cpbmbaz57@gmail.com">Email Me</Button>
+            <Button variant="contained" href="mailto:your.email@example.com">Email Me</Button>
             <Button variant="outlined" href="https://github.com/ConradPB" target="_blank" rel="noreferrer">
               GitHub
             </Button>
