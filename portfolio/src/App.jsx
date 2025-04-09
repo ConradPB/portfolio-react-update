@@ -61,7 +61,7 @@ function App() {
           <p>Feel free to reach out!</p>
           <div>
             <Button variant="contained" href="mailto:your.email@example.com">Email Me</Button>
-            <Button variant="outlined" href="https://github.com/G-rizz" target="_blank" rel="noreferrer">
+            <Button variant="outlined" href="https://github.com/ConradPB" target="_blank" rel="noreferrer">
               GitHub
             </Button>
           </div>
