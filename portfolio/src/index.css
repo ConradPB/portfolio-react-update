@@ -52,3 +52,11 @@ body {
   button {
     margin: 10px;
   }
+
+  .profile-pic-container {
+    text-align: center;
+    margin: -75px 0; /* Negative margin to overlap sections */
+    position: relative;
+    z-index: 10;
+  }
+  
