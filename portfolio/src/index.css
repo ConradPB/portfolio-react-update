@@ -60,3 +60,11 @@ body {
     z-index: 10;
   }
   
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white; /* White border to stand out */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
