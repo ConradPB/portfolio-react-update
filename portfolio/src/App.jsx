@@ -66,6 +66,21 @@ function App() {
           </div>
         </Container>
       </section>
+      <section id="contact" className="section">
+      <Container>
+        <h2>Contact</h2>
+        <p>Feel free to reach out!</p>
+        <div>
+          <Typography variant="body1">Email: cpbmbaz57@gmail.com</Typography>
+          <Button variant="contained" onClick={copyEmail}>
+            {copied ? 'Copied!' : 'Copy Email'}
+          </Button>
+          <Button variant="outlined" href="https://github.com/G-rizz" target="_blank" rel="noreferrer">
+            GitHub
+          </Button>
+        </div>
+      </Container>
+    </section>
     </div>
   );
 }
