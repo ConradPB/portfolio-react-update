@@ -3,7 +3,6 @@ import { AppBar, Toolbar, Typography, Button, Container } from '@mui/material';
 function App() {
   return (
     <div className="App">
-      {/* Navigation Bar */}
       <AppBar position="static" color="primary">
         <Toolbar>
           <Typography variant="h6" style={{ flexGrow: 1 }}>
@@ -15,7 +14,6 @@ function App() {
         </Toolbar>
       </AppBar>
 
-      {/* Welcome Section */}
       <section id="welcome-section" className="section welcome">
         <Container>
           <h1>Hello, I’m Conrad Bugingo</h1>
@@ -23,7 +21,11 @@ function App() {
         </Container>
       </section>
 
-      {/* About Section */}
+      {/* Profile Picture Section */}
+      <div className="profile-pic-container">
+        <img src="/src/assets/profile.jpg" alt="Conrad Bugingo" className="profile-pic" />
+      </div>
+
       <section id="about" className="section">
         <Container>
           <h2>About Me</h2>
@@ -34,7 +36,6 @@ function App() {
         </Container>
       </section>
 
-      {/* Work Section */}
       <section id="work" className="section">
         <Container>
           <h2>Work</h2>
@@ -53,14 +54,13 @@ function App() {
         </Container>
       </section>
 
-      {/* Contact Section */}
       <section id="contact" className="section">
         <Container>
           <h2>Contact</h2>
           <p>Feel free to reach out!</p>
           <div>
             <Button variant="contained" href="mailto:cpbmbaz57@gmail.com">Email Me</Button>
-            <Button variant="outlined" href="https://github.com/ConradPB" target="_blank" rel="noreferrer">
+            <Button variant="outlined" href="https://github.com/G-rizz" target="_blank" rel="noreferrer">
               GitHub
             </Button>
           </div>
