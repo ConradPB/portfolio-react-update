@@ -68,7 +68,6 @@ function App() {
           <h2>Contact</h2>
           <p>Feel free to reach out!</p>
           <div>
-            <Typography variant="body1"></Typography>
             <Button variant="contained" onClick={copyEmail}>
               {copied ? 'Copied!' : 'Copy Email'}
             </Button>
