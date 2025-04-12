@@ -12,7 +12,28 @@ function App() {
 
   return (
     <div className="App">
-     
+      <AppBar position="static" color="primary">
+        <Toolbar>
+          <Typography variant="h6" style={{ flexGrow: 1 }}>
+            Conrad Bugingo
+          </Typography>
+          <Button color="inherit" href="#about">About</Button>
+          <Button color="inherit" href="#work">Work</Button>
+          <Button color="inherit" href="#contact">Contact</Button>
+        </Toolbar>
+      </AppBar>
+
+      <section id="welcome-section" className="section welcome">
+        <Container>
+          <h1>Hello, I’m Conrad Bugingo</h1>
+          <p>A passionate developer building creative solutions.</p>
+        </Container>
+      </section>
+
+      {/* Profile Picture Section */}
+      <div className="profile-pic-container">
+        <img src="/src/assets/profile.jpg" alt="Conrad Bugingo" className="profile-pic" />
+      </div>
 
       <section id="about" className="section">
         <Container>
