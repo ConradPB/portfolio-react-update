@@ -66,7 +66,7 @@ function App() {
       <section id="contact" className="section">
         <Container>
           <h2>Contact</h2>
-          <p>Feel free to reach out!!</p>
+          <p>Feel free to reach out!</p>
           <div>
             <Button variant="contained" onClick={copyEmail}>
               {copied ? 'Copied!' : 'Copy Email'}
