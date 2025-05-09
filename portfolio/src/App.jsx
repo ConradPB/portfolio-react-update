@@ -68,7 +68,7 @@ function App() {
           <h2>Contact</h2>
           <p>Feel free to reach out!</p>
           <div>
-            <Button variant="contained" onClick={copyEmal}>
+            <Button variant="contained" onClick={copyEmail}>
               {copied ? 'Copied!' : 'Copy Email'}
             </Button>
             <Button variant="outlined" href="https://github.com/G-rizz" target="_blank" rel="noreferrer">
