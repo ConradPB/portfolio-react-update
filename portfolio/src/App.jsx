@@ -15,8 +15,7 @@ function App() {
       <AppBar position="static" 
       color="primary">
         <Toolbar>
-          <Typography variant="h6" 
-          style={{ flexGrow: 1 }}>
+          <Typography variant="h6" style={{ flexGrow: 1 }}>
             Conrad Bugingo
           </Typography>
           <Button color="inherit" href="#about">About</Button>
