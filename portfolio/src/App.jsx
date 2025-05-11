@@ -65,7 +65,8 @@ function App() {
         </Container>
       </section>
 
-      <section id="contact" className="section">
+      <section id="contact" 
+      className="section">
         <Container>
           <h2>Contact</h2>
           <p>Feel free to reach out!</p>
