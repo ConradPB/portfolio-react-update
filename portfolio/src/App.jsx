@@ -48,6 +48,7 @@ function App() {
       <section id="work" className="section">
         <Container>
           <h2>Work</h2>
+          
           <div className="projects-grid">
             <div className="project-tile">
               <h3>Project 1</h3>
