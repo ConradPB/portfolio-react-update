@@ -26,7 +26,7 @@ function App() {
       <section id="welcome-section" className="section welcome">
         <Container>
           <h1>Hello, I’m Conrad Bugingo</h1>
-          <p>A passionate developer building creative solutions.</p>
+          <p>A passionate developer building creative solutions..</p>
         </Container>
       </section>
 
