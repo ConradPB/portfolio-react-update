@@ -62,7 +62,6 @@ function App() {
           </div>
         </Container>
       </section>
-
       <section id="contact"
         className="section">
         <Container>
