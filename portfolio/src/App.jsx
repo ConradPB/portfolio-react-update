@@ -51,7 +51,9 @@ function App() {
             <div className="project-tile">
               <h3>Project </h3>
               <p>A brief description of your project.</p>
-              <Button variant="outlined" href="#">View Project</Button>
+              <Button variant="outlined" href="#">View Project
+                
+              </Button>
             </div>
             <div className="project-tile">
               <h3>Project 2</h3>
