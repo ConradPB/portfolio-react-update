@@ -22,7 +22,6 @@ function App() {
           <Button color="inherit" href="#contact">Contact</Button>
         </Toolbar>
       </AppBar>
-
       <section id="welcome-section" className="section welcome">
         <Container>
           <h1>Hello, I’m Conrad Bugingo</h1>
@@ -37,7 +36,7 @@ function App() {
 
       <section id="about" className="section">
         <Container>
-          
+
           <h2>About Me</h2>
           <p>
             I’m a developer with experience in React, JavaScript, and modern web technologies.
