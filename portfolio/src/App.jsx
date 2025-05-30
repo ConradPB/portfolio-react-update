@@ -40,7 +40,7 @@ function App() {
           <h2>About Me</h2>
           <p>
             I’m a developer with experience in React, JavaScript, and modern web technologies.
-            I love solvin problems and creating user-friendly applications.
+            I love solving problems and creating user-friendly applications.
           </p>
         </Container>
       </section>
