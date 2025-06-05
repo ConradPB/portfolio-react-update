@@ -75,7 +75,6 @@ function App() {
               GitHub
             </Button>
           </div>
-          
         </Container>
       </section>
     </div>
