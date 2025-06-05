@@ -73,7 +73,6 @@ function App() {
             </Button>
             <Button variant="outlined" href="https://github.com/G-rizz" target="_blank" rel="noreferrer">
               GitHub
-              
             </Button>
           </div>
         </Container>
