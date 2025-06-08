@@ -59,7 +59,6 @@ function App() {
               <Button variant="outlined" href="#">View Project</Button>
             </div>
           </div>
-          
         </Container>
       </section>
       <section id="contact"
