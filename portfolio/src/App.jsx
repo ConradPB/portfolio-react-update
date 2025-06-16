@@ -29,6 +29,7 @@ function App() {
         </Container>
       </section>
 
+
       {/* Profile Picture Section */}
       <div className="profile-pic-container">
         <img src="/src/assets/profile.jpg" alt="Conrad Bugingo" className="profile-pic" />
