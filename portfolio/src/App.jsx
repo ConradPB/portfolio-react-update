@@ -34,6 +34,7 @@ function App() {
         <img src="/src/assets/profile.jpg" alt="Conrad Bugingo" className="profile-pic" />
       </div>
 
+
       <section id="about" className="section">
         <Container>
 
