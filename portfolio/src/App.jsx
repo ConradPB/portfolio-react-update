@@ -36,7 +36,6 @@ function App() {
 
       <section id="about" className="section">
         <Container>
-
           <h2>About Me</h2>
           <p>
             I’m a developer with experience in React, JavaScript, and modern web technologies.
