@@ -48,7 +48,7 @@ function App() {
           <h2>Work</h2>
           <div className="projects-grid">
             <div className="project-tile">
-              <h3>Project </h3>
+              <h3>Project</h3>
               <p>A brief description of your project.</p>
               <Button variant="outlined" href="#">View Project</Button>
             </div>
