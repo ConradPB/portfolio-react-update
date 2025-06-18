@@ -35,6 +35,7 @@ function App() {
       </div>
 
       <section id="about" className="section">
+        
         <Container>
 
           <h2>About Me</h2>
