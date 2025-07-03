@@ -10,7 +10,9 @@ function App() {
     setTimeout(() => setCopied(false), 2000); // Reset after 2 seconds
   };
 
-
+  return (
+    
+  );
 }
 
 export default App;
