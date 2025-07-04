@@ -103,3 +103,26 @@ body {
   background-color: #1976d2;
   color: white;
 }
+
+.contact {
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #0d47a1;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
