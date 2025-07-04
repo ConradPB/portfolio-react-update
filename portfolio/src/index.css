@@ -126,3 +126,16 @@ h2 {
     transform: translateY(0);
   }
 }
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .welcome h1 {
+    font-size: 2rem;
+  }
+
+  .welcome p {
+    font-size: 1.2rem;
+  }
+
+  
+}
