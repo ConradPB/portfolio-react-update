@@ -20,3 +20,44 @@ body {
   text-align: center;
 }
 
+.welcome {
+  background: linear-gradient(135deg, #1976d2, #0d47a1); /* Gradient background */
+  color: white;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.welcome h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.welcome p {
+  font-size: 1.5rem;
+}
+
+.profile-pic-container {
+  text-align: center;
+  margin: -80px 0; /* Overlap effect */
+  position: relative;
+  z-index: 10;
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
