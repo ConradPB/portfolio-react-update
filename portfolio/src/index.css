@@ -142,5 +142,7 @@ h2 {
     height: 120px;
   }
 
-  
+  .section {
+    padding: 40px 0;
+  }
 }
