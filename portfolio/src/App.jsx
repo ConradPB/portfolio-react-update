@@ -3,16 +3,16 @@ import { AppBar, Toolbar, Typography, Button, Container, Box } from '@mui/materi
 
 function App() {
   const [copied, setCopied] = useState(false);
+  const [showMore, setShowMore] = useState(false);
 
   const copyEmail = () => {
     navigator.clipboard.writeText('cpbmbaz57@gmail.com');
     setCopied(true);
-    setTimeout(() => setCopied(false), 2000); // Reset after 2 seconds
+    setTimeout(() => setCopied(false), 2000);
   };
 
   return (
     <div className="App">
-      {/* Navigation Bar */}
       <AppBar position="sticky" className="app-bar">
         <Toolbar>
           <Typography variant="h6" style={{ flexGrow: 1, fontWeight: 700 }}>
@@ -25,9 +25,8 @@ function App() {
         </Toolbar>
       </AppBar>
 
-      {/* Welcome Section */}
       <section id="welcome-section" className="section welcome">
-        <Container>
+CERDContainer>
           <Box className="fade-in">
             <h1>Hello, I’m Conrad Bugingo</h1>
             <Typography variant="h5" component="p" sx={{ fontWeight: 300 }}>
@@ -37,12 +36,10 @@ function App() {
         </Container>
       </section>
 
-      {/* Profile Picture Section */}
       <div className="profile-pic-container">
         <img src="/src/assets/profile.jpg" alt="Conrad Bugingo" className="profile-pic" />
       </div>
 
-      {/* About Section */}
       <section id="about" className="section">
         <Container>
           <Box className="fade-in">
@@ -55,7 +52,6 @@ function App() {
         </Container>
       </section>
 
-      {/* Work Section */}
       <section id="work" className="section work">
         <Container>
           <Box className="fade-in">
@@ -77,12 +73,38 @@ function App() {
                   View Project
                 </Button>
               </div>
+              {showMore && (
+                <>
+                  <div className="project-tile">
+                    <img src="/src/assets/project3.jpg" alt="Project 3" className="project-img" />
+                    <h3>Project 3</h3>
+                    <Typography variant="body2">Another project description.</Typography>
+                    <Button variant="outlined" href="#" className="project-button">
+                      View Project
+                    </Button>
+                  </div>
+                  <div className="project-tile">
+                    <img src="/src/assets/project4.jpg" alt="Project 4" className="project-img" />
+                    <h3>Project 4</h3>
+                    <Typography variant="body2">Another project description.</Typography>
+                    <Button variant="outlined" href="#" className="project-button">
+                      View Project
+                    </Button>
+                  </div>
+                </>
+              )}
             </div>
+            <Button
+              variant="contained"
+              onClick={() => setShowMore(!showMore)}
+              sx={{ mt: 3 }}
+            >
+              {showMore ? 'Show Less' : 'View More'}
+            </Button>
           </Box>
         </Container>
       </section>
 
-      {/* Contact Section */}
       <section id="contact" className="section contact">
         <Container>
           <Box className="fade-in">
