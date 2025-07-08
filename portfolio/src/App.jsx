@@ -38,6 +38,26 @@ function App() {
         </Container>
       </section>
 
+      {/* Profile Picture Section */}
+      <div className="profile-pic-container">
+        <img src="/src/assets/profile.jpg" alt="Conrad Bugingo" className="profile-pic" />
+      </div>
+
+      {/* About Section */}
+      <section id="about" className="section">
+        <Container>
+          <Box className="fade-in">
+            <h2>About Me</h2>
+            <Typography variant="body1">
+              I’m a developer with expertise in React, JavaScript, and modern web technologies. 
+              I thrive on solving complex problems and building user-friendly applications that make an impact.
+            </Typography>
+          </Box>
+        </Container>
+      </section>
+
+      {/* Work Section */}
+
     </div>
   );
 }
