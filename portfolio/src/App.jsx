@@ -57,7 +57,60 @@ function App() {
       </section>
 
       {/* Work Section */}
+      <section id="work" className="section work">
+        <Container>
+          <Box className="fade-in">
+            <h2>Work</h2>
+            <div className="projects-grid">
+              <div className="project-tile">
+                <img src="/src/assets/project1.jpg" alt="Project 1" className="project-img" />
+                <h3>Project 1</h3>
+                <Typography variant="body2">A brief description of your project.</Typography>
+                <Button variant="outlined" href="#" className="project-button">
+                  View Project
+                </Button>
+              </div>
+              <div className="project-tile">
+                <img src="/src/assets/project2.jpg" alt="Project 2" className="project-img" />
+                <h3>Project 2</h3>
+                <Typography variant="body2">A brief description of your project.</Typography>
+                <Button variant="outlined" href="#" className="project-button">
+                  View Project
+                </Button>
+              </div>
+              {showMore && (
+                <>
+                  <div className="project-tile">
+                    <img src="/src/assets/project3.jpg" alt="Project 3" className="project-img" />
+                    <h3>Project 3</h3>
+                    <Typography variant="body2">Another project description.</Typography>
+                    <Button variant="outlined" href="#" className="project-button">
+                      View Project
+                    </Button>
+                  </div>
+                  <div className="project-tile">
+                    <img src="/src/assets/project4.jpg" alt="Project 4" className="project-img" />
+                    <h3>Project 4</h3>
+                    <Typography variant="body2">Another project description.</Typography>
+                    <Button variant="outlined" href="#" className="project-button">
+                      View Project
+                    </Button>
+                  </div>
+                </>
+              )}
+            </div>
+            <Button
+              variant="contained"
+              onClick={() => setShowMore(!showMore)}
+              sx={{ mt: 3 }}
+            >
+              {showMore ? 'Show Less' : 'View More'}
+            </Button>
+          </Box>
+        </Container>
+      </section>
 
+      
     </div>
   );
 }
