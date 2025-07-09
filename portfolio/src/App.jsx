@@ -129,7 +129,6 @@ function App() {
         </Container>
       </section>
     </div>
-  );
-}
+  )
 
 export default App;
