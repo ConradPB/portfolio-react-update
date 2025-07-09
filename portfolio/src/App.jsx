@@ -110,7 +110,7 @@ function App() {
         </Container>
       </section>
 
-      {/* Contact Section */
+      {/* Contact Section */}
       <section id="contact" className="section contact">
         <Container>
           <Box className="fade-in">
