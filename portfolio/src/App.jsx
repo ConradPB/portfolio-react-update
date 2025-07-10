@@ -44,7 +44,43 @@ function App() {
       </div>
 
       {/* About Section */}
+      <section id="about" className="section">
+        <Container>
+          <Box className="fade-in">
+            <h2>About Me</h2>
+            <Typography variant="body1">
+              I’m a developer with expertise in React, JavaScript, and modern web technologies, 
+              including full-stack development and WordPress. I thrive on solving complex problems 
+              and building user-friendly applications that make an impact.
+            </Typography>
+          </Box>
+        </Container>
+      </section>
 
+      {/* Work Section */}
+      <section id="work" className="section work">
+        <Container>
+          <Box className="fade-in">
+            <h2>Work</h2>
+            <div className="projects-grid">
+              {/* Main Project 1: Microloan Tracker */}
+              <div className="project-tile">
+                <img src="/src/assets/microloan-tracker.jpg" alt="Microloan Tracker" className="project-img" />
+                <h3>Microloan Tracker</h3>
+                <Typography variant="body2">
+                  A full-stack app for tracking microloans, built with React and a backend server.
+                </Typography>
+                <Button
+                  variant="outlined"
+                  href="https://microloan-tracker.vercel.app/"
+                  target="_blank"
+                  className="project-button"
+                >
+                  View Project
+                </Button>
+              </div>
+              {/* Main Project 2: Crypto Trends */}
+             
     </div>
   );
 }
