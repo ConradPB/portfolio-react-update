@@ -80,8 +80,41 @@ function App() {
                 </Button>
               </div>
               {/* Main Project 2: Crypto Trends */}
-             
-    </div>
+              <div className="project-tile">
+                <img src="/src/assets/crypto-trends.jpg" alt="Crypto Trends" className="project-img" />
+                <h3>Crypto Trends</h3>
+                <Typography variant="body2">
+                  A full-stack app tracking cryptocurrency trends using real-time API data.
+                </Typography>
+                <Button
+                  variant="outlined"
+                  href="https://crypto-trends-kohl.vercel.app/"
+                  target="_blank"
+                  className="project-button"
+                >
+                  View Project
+                </Button>
+              </div>
+              {showMore && (
+                <>
+                  {/* View More Project 1: EESC Luganda */}
+                  <div className="project-tile">
+                    <img src="/src/assets/eesc-luganda.jpg" alt="EESC Luganda" className="project-img" />
+                    <h3>EESC Luganda</h3>
+                    <Typography variant="body2">
+                      A WordPress site for EESC Luganda, showcasing CMS development skills.
+                    </Typography>
+                    <Button
+                      variant="outlined"
+                      href="https://eescluganda.wuaze.com/?i=1"
+                      target="_blank"
+                      className="project-button"
+                    >
+                      View Project
+                    </Button>
+                  </div>
+                  {/* View More Project 2: Markdown Previewer */}
+                  
   );
 }
 
