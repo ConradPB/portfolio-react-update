@@ -114,7 +114,58 @@ function App() {
                     </Button>
                   </div>
                   {/* View More Project 2: Markdown Previewer */}
-                  
+                  <div className="project-tile">
+                    <img src="/src/assets/markdown-previewer.jpg" alt="Markdown Previewer" className="project-img" />
+                    <h3>Markdown Previewer</h3>
+                    <Typography variant="body2">
+                      A React app that converts Markdown input to rendered HTML in real-time.
+                    </Typography>
+                    <Button
+                      variant="outlined"
+                      href="https://github.com/ConradPB/Markdown-Previewer"
+                      target="_blank"
+                      className="project-button"
+                    >
+                      View Project
+                    </Button>
+                  </div>
+                  {/* View More Project 3: Random Quote Machine */}
+                  <div className="project-tile">
+                    <img src="/src/assets/random-quote.jpg" alt="Random Quote Machine" className="project-img" />
+                    <h3>Random Quote Machine</h3>
+                    <Typography variant="body2">
+                      A JavaScript app that fetches and displays random quotes via an API.
+                    </Typography>
+                    <Button
+                      variant="outlined"
+                      href="https://github.com/ConradPB/Random-Quote-Machine"
+                      target="_blank"
+                      className="project-button"
+                    >
+                      View Project
+                    </Button>
+                  </div>
+                  {/* View More Project 4: Drum Machine */}
+                  <div className="project-tile">
+                    <img src="/src/assets/drum-machine.jpg" alt="Drum Machine" className="project-img" />
+                    <h3>Drum Machine</h3>
+                    <Typography variant="body2">
+                      An interactive app that plays drum sounds on key presses or clicks.
+                    </Typography>
+                    <Button
+                      variant="outlined"
+                      href="https://github.com/ConradPB/Drum-Machine"
+                      target="_blank"
+                      className="project-button"
+                    >
+                      View Project
+                    </Button>
+                  </div>
+                </>
+              )}
+            </div>
+            
+    </div>
   );
 }
 
