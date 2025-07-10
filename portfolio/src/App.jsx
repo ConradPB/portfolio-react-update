@@ -164,7 +164,35 @@ function App() {
                 </>
               )}
             </div>
-            
+            <Button
+              variant="contained"
+              onClick={() => setShowMore(!showMore)}
+              sx={{ mt: 3 }}
+            >
+              {showMore ? 'Show Less' : 'View More'}
+            </Button>
+          </Box>
+        </Container>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="section contact">
+        <Container>
+          <Box className="fade-in">
+            <h2>Contact</h2>
+            <Typography variant="body1">Feel free to reach out!</Typography>
+            <Box sx={{ mt: 2 }}>
+              <Typography variant="body1">Email: cpbmbaz57@gmail.com</Typography>
+              <Button variant="contained" onClick={copyEmail} sx={{ my: 1 }}>
+                {copied ? 'Copied!' : 'Copy Email'}
+              </Button>
+              <Button variant="outlined" href="https://github.com/ConradPB" target="_blank" rel="noreferrer">
+                GitHub
+              </Button>
+            </Box>
+          </Box>
+        </Container>
+      </section>
     </div>
   );
 }
