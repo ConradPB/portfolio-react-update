@@ -93,7 +93,7 @@ function App() {
               <div className="projects-grid">
                 <div className="project-tile">
                   <img src="/src/assets/eesc-luganda.jpg" alt="EESC Luganda" className="project-img" />
-                  <h3>EESC Luganda</h3>
+                  <h3>EESCL Uganda</h3>
                   <Typography variant="body2">
                     A WordPress site for EESC Luganda, showcasing CMS development skills.
                   </Typography>
@@ -107,7 +107,7 @@ function App() {
                   </Button>
                 </div>
                 <div className="project-tile">
-                  <img src="/src/assets/" alt="Distance Calculator" className="project-img" />
+                  <img src="src/assets/" alt="Distance Calculator" className="project-img" />
                   <h3>Distance Calculator</h3>
                   <Typography variant="body2">
                     A React app that calculates distances between addresses or coordinates using OpenCage and the Haversine formula.
