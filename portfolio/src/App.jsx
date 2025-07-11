@@ -8,12 +8,11 @@ function App() {
   const copyEmail = () => {
     navigator.clipboard.writeText('cpbmbaz57@gmail.com');
     setCopied(true);
-    setTimeout(() => setCopied(false), 2000); // Reset after 2 seconds
+    setTimeout(() => setCopied(false), 2000);
   };
 
   return (
     <div className="App">
-      {/* Navigation Bar */}
       <AppBar position="sticky" className="app-bar">
         <Toolbar>
           <Typography variant="h6" style={{ flexGrow: 1, fontWeight: 700 }}>
@@ -26,7 +25,6 @@ function App() {
         </Toolbar>
       </AppBar>
 
-      {/* Welcome Section */}
       <section id="welcome-section" className="section welcome">
         <Container>
           <Box className="fade-in">
@@ -38,12 +36,10 @@ function App() {
         </Container>
       </section>
 
-      {/* Profile Picture Section */}
       <div className="profile-pic-container">
         <img src="/src/assets/profile.jpg" alt="Conrad Bugingo" className="profile-pic" />
       </div>
 
-      {/* About Section */}
       <section id="about" className="section">
         <Container>
           <Box className="fade-in">
@@ -57,13 +53,11 @@ function App() {
         </Container>
       </section>
 
-      {/* Work Section */}
       <section id="work" className="section work">
         <Container>
           <Box className="fade-in">
             <h2>Work</h2>
             <div className="projects-grid">
-              {/* Main Project 1: Microloan Tracker */}
               <div className="project-tile">
                 <img src="/src/assets/microloan-tracker.jpg" alt="Microloan Tracker" className="project-img" />
                 <h3>Microloan Tracker</h3>
@@ -79,7 +73,6 @@ function App() {
                   View Project
                 </Button>
               </div>
-              {/* Main Project 2: Crypto Trends */}
               <div className="project-tile">
                 <img src="/src/assets/crypto-trends.jpg" alt="Crypto Trends" className="project-img" />
                 <h3>Crypto Trends</h3>
@@ -95,67 +88,61 @@ function App() {
                   View Project
                 </Button>
               </div>
+              <div className="project-tile">
+                <img src="/src/assets/eesc-luganda.jpg" alt="EESC Luganda" className="project-img" />
+                <h3>EESC Luganda</h3>
+                <Typography variant="body2">
+                  A WordPress site for EESC Luganda, showcasing CMS development skills.
+                </Typography>
+                <Button
+                  variant="outlined"
+                  href="https://eescluganda.wuaze.com/?i=1"
+                  target="_blank"
+                  className="project-button"
+                >
+                  View Project
+                </Button>
+              </div>
+              <div className="project-tile">
+                <img src="/src/assets/distance-calculator.jpg" alt="Distance Calculator" className="project-img" />
+                <h3>Distance Calculator</h3>
+                <Typography variant="body2">
+                  A React app that calculates distances between addresses or coordinates using OpenCage and the Haversine formula.
+                </Typography>
+                <Button
+                  variant="outlined"
+                  href="https://distance-calculator-omega.vercel.app/"
+                  target="_blank"
+                  className="project-button"
+                >
+                  View Project
+                </Button>
+              </div>
               {showMore && (
                 <>
-                  {/* View More Project 1: EESC Luganda */}
                   <div className="project-tile">
-                    <img src="/src/assets/eesc-luganda.jpg" alt="EESC Luganda" className="project-img" />
-                    <h3>EESC Luganda</h3>
+                    <img src="/src/assets/placeholder.jpg" alt="Coming Soon" className="project-img" />
+                    <h3>Coming Soon</h3>
                     <Typography variant="body2">
-                      A WordPress site for EESC Luganda, showcasing CMS development skills.
+                      A new project is in development. Stay tuned for updates!
                     </Typography>
                     <Button
                       variant="outlined"
-                      href="https://eescluganda.wuaze.com/?i=1"
-                      target="_blank"
+                      disabled
                       className="project-button"
                     >
                       View Project
                     </Button>
                   </div>
-                  {/* View More Project 2: Markdown Previewer */}
                   <div className="project-tile">
-                    <img src="/src/assets/markdown-previewer.jpg" alt="Markdown Previewer" className="project-img" />
-                    <h3>Markdown Previewer</h3>
+                    <img src="/src/assets/placeholder.jpg" alt="Coming Soon" className="project-img" />
+                    <h3>Coming Soon</h3>
                     <Typography variant="body2">
-                      A React app that converts Markdown input to rendered HTML in real-time.
+                      A new project is in development. Stay tuned for updates!
                     </Typography>
                     <Button
                       variant="outlined"
-                      href="https://github.com/ConradPB/Markdown-Previewer"
-                      target="_blank"
-                      className="project-button"
-                    >
-                      View Project
-                    </Button>
-                  </div>
-                  {/* View More Project 3: Random Quote Machine */}
-                  <div className="project-tile">
-                    <img src="/src/assets/random-quote.jpg" alt="Random Quote Machine" className="project-img" />
-                    <h3>Random Quote Machine</h3>
-                    <Typography variant="body2">
-                      A JavaScript app that fetches and displays random quotes via an API.
-                    </Typography>
-                    <Button
-                      variant="outlined"
-                      href="https://github.com/ConradPB/Random-Quote-Machine"
-                      target="_blank"
-                      className="project-button"
-                    >
-                      View Project
-                    </Button>
-                  </div>
-                  {/* View More Project 4: Drum Machine */}
-                  <div className="project-tile">
-                    <img src="/src/assets/drum-machine.jpg" alt="Drum Machine" className="project-img" />
-                    <h3>Drum Machine</h3>
-                    <Typography variant="body2">
-                      An interactive app that plays drum sounds on key presses or clicks.
-                    </Typography>
-                    <Button
-                      variant="outlined"
-                      href="https://github.com/ConradPB/Drum-Machine"
-                      target="_blank"
+                      disabled
                       className="project-button"
                     >
                       View Project
@@ -175,7 +162,6 @@ function App() {
         </Container>
       </section>
 
-      {/* Contact Section */}
       <section id="contact" className="section contact">
         <Container>
           <Box className="fade-in">
