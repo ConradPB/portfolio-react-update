@@ -88,69 +88,69 @@ function App() {
                   View Project
                 </Button>
               </div>
-              <div className="project-tile">
-                <img src="/src/assets/eesc-luganda.jpg" alt="EESC Luganda" className="project-img" />
-                <h3>EESC Luganda</h3>
-                <Typography variant="body2">
-                  A WordPress site for EESC Luganda, showcasing CMS development skills.
-                </Typography>
-                <Button
-                  variant="outlined"
-                  href="https://eescluganda.wuaze.com/?i=1"
-                  target="_blank"
-                  className="project-button"
-                >
-                  View Project
-                </Button>
-              </div>
-              <div className="project-tile">
-                <img src="/src/assets/distance-calculator.jpg" alt="Distance Calculator" className="project-img" />
-                <h3>Distance Calculator</h3>
-                <Typography variant="body2">
-                  A React app that calculates distances between addresses or coordinates using OpenCage and the Haversine formula.
-                </Typography>
-                <Button
-                  variant="outlined"
-                  href="https://distance-calculator-omega.vercel.app/"
-                  target="_blank"
-                  className="project-button"
-                >
-                  View Project
-                </Button>
-              </div>
-              {showMore && (
-                <>
-                  <div className="project-tile">
-                    <img src="/src/assets/placeholder.jpg" alt="Coming Soon" className="project-img" />
-                    <h3>Coming Soon</h3>
-                    <Typography variant="body2">
-                      A new project is in development. Stay tuned for updates!
-                    </Typography>
-                    <Button
-                      variant="outlined"
-                      disabled
-                      className="project-button"
-                    >
-                      View Project
-                    </Button>
-                  </div>
-                  <div className="project-tile">
-                    <img src="/src/assets/placeholder.jpg" alt="Coming Soon" className="project-img" />
-                    <h3>Coming Soon</h3>
-                    <Typography variant="body2">
-                      A new project is in development. Stay tuned for updates!
-                    </Typography>
-                    <Button
-                      variant="outlined"
-                      disabled
-                      className="project-button"
-                    >
-                      View Project
-                    </Button>
-                  </div>
-                </>
-              )}
             </div>
+            {showMore && (
+              <div className="projects-grid">
+                <div className="project-tile">
+                  <img src="/src/assets/eesc-luganda.jpg" alt="EESC Luganda" className="project-img" />
+                  <h3>EESC Luganda</h3>
+                  <Typography variant="body2">
+                    A WordPress site for EESC Luganda, showcasing CMS development skills.
+                  </Typography>
+                  <Button
+                    variant="outlined"
+                    href="https://eescluganda.wuaze.com/?i=1"
+                    target="_blank"
+                    className="project-button"
+                  >
+                    View Project
+                  </Button>
+                </div>
+                <div className="project-tile">
+                  <img src="/src/assets/distance-calculator.jpg" alt="Distance Calculator" className="project-img" />
+                  <h3>Distance Calculator</h3>
+                  <Typography variant="body2">
+                    A React app that calculates distances between addresses or coordinates using OpenCage and the Haversine formula.
+                  </Typography>
+                  <Button
+                    variant="outlined"
+                    href="https://distance-calculator-omega.vercel.app/"
+                    target="_blank"
+                    className="project-button"
+                  >
+                    View Project
+                  </Button>
+                </div>
+                <div className="project-tile">
+                  <img src="/src/assets/placeholder.jpg" alt="Coming Soon" className="project-img" />
+                  <h3>Coming Soon</h3>
+                  <Typography variant="body2">
+                    A new project is in development. Stay tuned for updates!
+                  </Typography>
+                  <Button
+                    variant="outlined"
+                    disabled
+                    className="project-button"
+                  >
+                    View Project
+                  </Button>
+                </div>
+                <div className="project-tile">
+                  <img src="/src/assets/placeholder.jpg" alt="Coming Soon" className="project-img" />
+                  <h3>Coming Soon</h3>
+                  <Typography variant="body2">
+                    A new project is in development. Stay tuned for updates!
+                  </Typography>
+                  <Button
+                    variant="outlined"
+                    disabled
+                    className="project-button"
+                  >
+                    View Project
+                  </Button>
+                </div>
+              </div>
+            )}
             <Button
               variant="contained"
               onClick={() => setShowMore(!showMore)}
