@@ -95,7 +95,7 @@ function App() {
                   <img src="/src/assets/eescug" alt="EESCL Uganda" className="project-img" />
                   <h3>EESCL Uganda</h3>
                   <Typography variant="body2">
-                    A WordPress site for EESC Luganda, showcasing CMS development skills.
+                    A WordPress site for EESCL Uganda, showcasing CMS development skills.
                   </Typography>
                   <Button
                     variant="outlined"
