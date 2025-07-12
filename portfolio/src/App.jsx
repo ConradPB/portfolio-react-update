@@ -62,7 +62,7 @@ function App() {
                 <img src="/src/assets/snapshots/microloan-tracker.png" alt="Microloan Tracker" className="project-img" />
                 <h3>Microloan Tracker</h3>
                 <Typography variant="body2">
-                  A full-stack app for tracking microloans, built with React and a backend server.
+                  A full-stack app for tracking microloans, built with Python, React and Supabase.
                 </Typography>
                 <Button
                   variant="outlined"
