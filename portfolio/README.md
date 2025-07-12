@@ -100,3 +100,9 @@ vercel
 ## 📸 Screenshots
 
 ![Portfolio Screenshot](./src/assets/snapshots/portfolio.png)
+
+## 🤝 Contributing
+
+Feel free to submit issues or pull requests to improve the portfolio.
+
+For feedback or collaboration, email me at cpbmbaz57@gmail.com.
