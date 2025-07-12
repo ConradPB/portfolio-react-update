@@ -28,7 +28,7 @@ function App() {
       <section id="welcome-section" className="section welcome">
         <Container>
           <Box className="fade-in">
-            <h1>Hello, I’m Conrad Bugingo</h1>
+            <h1>Hello, I’m Conrad Mbaziira</h1>
             <Typography variant="h5" component="p" sx={{ fontWeight: 300 }}>
               A passionate developer crafting creative solutions
             </Typography>
