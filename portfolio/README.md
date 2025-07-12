@@ -99,4 +99,4 @@ vercel
 
 ## 📸 Screenshots
 
-![Portfolio Screenshot](./screenshots/portfolio.png)
+![Portfolio Screenshot](./src/assets/snapshots/portfolio.png)
