@@ -64,3 +64,35 @@ Features a clean design with Material-UI components, smooth animations, and a mo
 git clone https://github.com/ConradPB/portfolio.git
 cd portfolio
 ```
+
+### 2️⃣ Install Dependencies
+
+yarn install
+
+### 3️⃣ Run Locally
+
+yarn dev
+
+### 4️⃣ Build for Production
+
+yarn build
+
+### 🚀 Deployment
+
+To deploy on Vercel:
+
+1. Install the Vercel CLI:
+
+npm install -g vercel
+
+2. Deploy:
+
+vercel
+
+3. Recommended Vercel Build Settings:
+
+- **Build Command**: vite build
+
+- **Output Directory**: dist
+
+- **Framework Preset**: Vite
