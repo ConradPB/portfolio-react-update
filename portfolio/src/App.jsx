@@ -16,7 +16,7 @@ function App() {
       <AppBar position="sticky" className="app-bar">
         <Toolbar>
           <Typography variant="h6" style={{ flexGrow: 1, fontWeight: 700 }}>
-            Conrad Bugingo
+            Conrad Mbaziira
           </Typography>
           <Button color="inherit" href="#welcome-section">Home</Button>
           <Button color="inherit" href="#about">About</Button>
