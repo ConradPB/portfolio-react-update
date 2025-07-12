@@ -96,3 +96,7 @@ vercel
 - **Output Directory**: dist
 
 - **Framework Preset**: Vite
+
+## 📸 Screenshots
+
+![Portfolio Screenshot](./screenshots/portfolio.png)
