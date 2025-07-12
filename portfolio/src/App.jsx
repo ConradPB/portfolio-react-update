@@ -59,7 +59,7 @@ function App() {
             <h2>Work</h2>
             <div className="projects-grid">
               <div className="project-tile">
-                <img src="/src/assets/microloan-tracker.jpg" alt="Microloan Tracker" className="project-img" />
+                <img src="/src/assets/snapshots/microloan-tracker.png" alt="Microloan Tracker" className="project-img" />
                 <h3>Microloan Tracker</h3>
                 <Typography variant="body2">
                   A full-stack app for tracking microloans, built with React and a backend server.
