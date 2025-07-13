@@ -37,7 +37,7 @@ function App() {
       </section>
 
       <div className="profile-pic-container">
-        <img src="/src/assets/profile.jpg" alt="Conrad Bugingo" className="profile-pic" />
+        <img src="/src/assets/snapshots/profile.jpg" alt="Conrad Bugingo" className="profile-pic" />
       </div>
 
       <section id="about" className="section">
