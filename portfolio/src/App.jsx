@@ -74,7 +74,7 @@ function App() {
                 </Button>
               </div>
               <div className="project-tile">
-                <img src="/public/assets/screenshots/crypto-trends.png" alt="Crypto Trends" className="project-img" />
+                <img src="/assets/screenshots/crypto-trends.png" alt="Crypto Trends" className="project-img" />
                 <h3>Crypto Trends</h3>
                 <Typography variant="body2">
                   A full-stack app tracking cryptocurrency trends using real-time API data.
