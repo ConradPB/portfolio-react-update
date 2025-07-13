@@ -122,7 +122,7 @@ function App() {
                   </Button>
                 </div>
                 <div className="project-tile">
-                  <img src="/src/assets/placeholder.jpg" alt="Coming Soon" className="project-img" />
+                  <img src="/assets/placeholder.jpg" alt="Coming Soon" className="project-img" />
                   <h3>Coming Soon</h3>
                   <Typography variant="body2">
                     A new project is in development. Stay tuned for updates!
@@ -136,7 +136,7 @@ function App() {
                   </Button>
                 </div>
                 <div className="project-tile">
-                  <img src="/src/assets/placeholder.jpg" alt="Coming Soon" className="project-img" />
+                  <img src="/assets/placeholder.jpg" alt="Coming Soon" className="project-img" />
                   <h3>Coming Soon</h3>
                   <Typography variant="body2">
                     A new project is in development. Stay tuned for updates!
