@@ -59,7 +59,7 @@ function App() {
             <h2>Work</h2>
             <div className="projects-grid">
               <div className="project-tile">
-                <img src="/src/assets/snapshots/microloan-tracker.png" alt="Microloan Tracker" className="project-img" />
+                <img src="/src/assets/screenshots/microloan-tracker.png" alt="Microloan Tracker" className="project-img" />
                 <h3>Microloan Tracker</h3>
                 <Typography variant="body2">
                   A full-stack app for tracking microloans, built with React and a backend server.
@@ -74,7 +74,7 @@ function App() {
                 </Button>
               </div>
               <div className="project-tile">
-                <img src="/src/assets/snapshots/crypto-trends.png" alt="Crypto Trends" className="project-img" />
+                <img src="/src/assets/screenshots/crypto-trends.png" alt="Crypto Trends" className="project-img" />
                 <h3>Crypto Trends</h3>
                 <Typography variant="body2">
                   A full-stack app tracking cryptocurrency trends using real-time API data.
@@ -92,7 +92,7 @@ function App() {
             {showMore && (
               <div className="projects-grid">
                 <div className="project-tile">
-                  <img src="/src/assets/snapshots/eesclug.png" alt="EESCL Uganda" className="project-img" />
+                  <img src="/src/assets/screenshots/eesclug.png" alt="EESCL Uganda" className="project-img" />
                   <h3>EESCL Uganda</h3>
                   <Typography variant="body2">
                     A WordPress site for EESCL Uganda, showcasing CMS development skills.
@@ -107,7 +107,7 @@ function App() {
                   </Button>
                 </div>
                 <div className="project-tile">
-                  <img src="/src/assets/snapshots/calc.png" alt="Distance Calculator" className="project-img" />
+                  <img src="/src/assets/screenshots/calc.png" alt="Distance Calculator" className="project-img" />
                   <h3>Distance Calculator</h3>
                   <Typography variant="body2">
                     A React app that calculates distances between addresses or coordinates using OpenCage and the Haversine formula.
