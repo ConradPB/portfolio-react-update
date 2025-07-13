@@ -37,7 +37,7 @@ function App() {
       </section>
 
       <div className="profile-pic-container">
-        <img src="/public/assets/screenshots/profile.jpg" alt="Conrad Bugingo" className="profile-pic" />
+        <img src="/assets/screenshots/profile.jpg" alt="Conrad Bugingo" className="profile-pic" />
       </div>
 
       <section id="about" className="section">
@@ -59,7 +59,7 @@ function App() {
             <h2>Work</h2>
             <div className="projects-grid">
               <div className="project-tile">
-                <img src="/public/assets/screenshots/microloan-tracker.png" alt="Microloan Tracker" className="project-img" />
+                <img src="/assets/screenshots/microloan-tracker.png" alt="Microloan Tracker" className="project-img" />
                 <h3>Microloan Tracker</h3>
                 <Typography variant="body2">
                   A full-stack app for tracking microloans, built with React and a backend server.
