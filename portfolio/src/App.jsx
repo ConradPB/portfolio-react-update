@@ -92,7 +92,7 @@ function App() {
             {showMore && (
               <div className="projects-grid">
                 <div className="project-tile">
-                  <img src="/public/assets/screenshots/eesclug.png" alt="EESCL Uganda" className="project-img" />
+                  <img src="./public/assets/screenshots/eesclug.png" alt="EESCL Uganda" className="project-img" />
                   <h3>EESCL Uganda</h3>
                   <Typography variant="body2">
                     A WordPress site for EESCL Uganda, showcasing CMS development skills.
