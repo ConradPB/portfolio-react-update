@@ -102,7 +102,7 @@ function App() {
                   <img src={eescLuganda} alt="EESC Luganda" className="project-img" />
                   <h3>EESC Luganda</h3>
                   <Typography variant="body2">
-                    A WordPress site for EESC Luganda, showcasing CMS development skills.
+                    A WordPress site for EESCL Uganda, showcasing CMS development skills.
                   </Typography>
                   <Button
                     variant="outlined"
