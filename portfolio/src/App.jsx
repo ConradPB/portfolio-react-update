@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { AppBar, Toolbar, Typography, Button, Container, Box } from '@mui/material';
 // Import images
 import profilePic from './assets/snapshots/profile.jpg';
-import microloanTracker from './assets/snapshots/microloan-tracker.jpg';
+import microlo;
 import cryptoTrends from './assets/snapshots/crypto-trends.jpg';
 import eescLuganda from './assets/snapshots/eesc-luganda.jpg';
 import distanceCalculator from './assets/snapshots/distance-calculator.jpg';
