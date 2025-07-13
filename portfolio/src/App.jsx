@@ -107,7 +107,7 @@ function App() {
                   </Button>
                 </div>
                 <div className="project-tile">
-                  <img src="/public/assets/screenshots/calc.png" alt="Distance Calculator" className="project-img" />
+                  <img src="/assets/screenshots/calc.png" alt="Distance Calculator" className="project-img" />
                   <h3>Distance Calculator</h3>
                   <Typography variant="body2">
                     A React app that calculates distances between addresses or coordinates using OpenCage and the Haversine formula.
