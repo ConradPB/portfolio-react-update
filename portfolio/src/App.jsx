@@ -97,7 +97,6 @@ function App() {
                   <Typography variant="body2">
                     A WordPress site for EESCL Uganda, showcasing CMS development skills.
                   </Typography>
-                  
                   <Button
                     variant="outlined"
                     href="https://eescluganda.wuaze.com/?i=1"
