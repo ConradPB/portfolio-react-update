@@ -136,7 +136,6 @@ function App() {
                   </Button>
                 </div>
                 <div className="project-tile">
-                  
                   <img src="/assets/placeholder.jpg" alt="Coming Soon" className="project-img" />
                   <h3>Coming Soon</h3>
                   <Typography variant="body2">
