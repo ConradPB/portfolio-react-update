@@ -12,7 +12,7 @@ function App() {
   };
 
   return (
-    <div className="App
+    <div className="App">
       <AppBar position="sticky" className="app-bar">
         <Toolbar>
           <Typography variant="h6" style={{ flexGrow: 1, fontWeight: 700 }}>
