@@ -99,7 +99,7 @@ vercel
 
 ## 📸 Screenshots
 
-![Portfolio Screenshot](./src/assets/snapshots/portfolio.png)
+![Portfolio Screenshot](./public/assets/screenshots/portfolio.png)
 
 ## 🤝 Contributing
 
