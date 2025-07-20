@@ -106,7 +106,7 @@ function App() {
                   >
                     View Project
                   </Button>
-                </div>
+                </div> 
                 <div className="project-tile">
                   <img src="/assets/screenshots/calc.png" alt="Distance Calculator" className="project-img" />
                   <h3>Distance Calculator</h3>
