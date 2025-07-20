@@ -115,7 +115,7 @@ function App() {
                   </Typography>
                   <Button
                     variant="outlined"
-                    href="https://distance-calculator-omega.vercel.'app/"
+                    href="https://distance-calculator-omega.vercel.app/"
                     target="_blank"
                     className="project-button"
                   >
