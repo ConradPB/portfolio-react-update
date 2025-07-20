@@ -101,7 +101,7 @@ vercel
 
 ![Portfolio Screenshot](./public/assets/screenshots/portfolio.png)
 
-## 🤝 Contributing
+## 🤝 Contributin
 
 Feel free to submit issues or pull requests to improve the portfolio.
 
