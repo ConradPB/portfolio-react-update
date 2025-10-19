@@ -91,3 +91,47 @@ h2::after {
   border-radius: 2px;
 }
 
+/* ---------- PROJECTS SECTION ---------- */
+.work {
+  background-color: #fff;
+}
+
+.featured-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 36px;
+  margin-top: 30px;
+}
+
+.featured {
+  max-width: 500px;
+  flex: 1 1 420px;
+  background: linear-gradient(145deg, #ffffff, #f3f5ff);
+  border: 2px solid rgba(115, 103, 240, 0.25);
+  box-shadow: 0 10px 25px rgba(115, 103, 240, 0.15);
+  transition: all 0.4s ease;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.featured:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(115, 103, 240, 0.3);
+  border-color: rgba(115, 103, 240, 0.4);
+}
+
+.featured h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #3f3d56;
+  margin-top: 10px;
+}
+
+.featured p,
+.featured .MuiTypography-body2 {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
