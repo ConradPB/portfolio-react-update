@@ -51,7 +51,7 @@ function App() {
 
       {/* --- Profile Image --- */}
       <div className="profile-pic-container">
-        <motio.img
+        <motion.img
           src="/assets/screenshots/profile.jpg"
           alt="Conrad Bugingo"
           className="profile-pic"
