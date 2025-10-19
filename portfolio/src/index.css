@@ -22,3 +22,41 @@ body {
   text-align: center;
 }
 
+.welcome {
+  background: linear-gradient(135deg, #3f51b5, #673ab7);
+  color: white;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.welcome h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #e0e0ff;
+}
+
+/* --- Profile Image --- */
+.profile-pic-container {
+  text-align: center;
+  margin: -80px 0;
+  position: relative;
+  z-index: 10;
+}
+
+.profile-pic {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
