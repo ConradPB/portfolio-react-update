@@ -106,10 +106,96 @@ function App() {
 
             {/* --- Lower Section (showMore) --- */}
             {showMore && (
-              
+              <div className="projects-grid">
+                {/* Crypto Trends */}
+                <div className="project-tile">
+                  <img
+                    src="/assets/screenshots/crypto-trends.png"
+                    alt="Crypto Trends"
+                    className="project-img"
+                  />
+                  <h3>Crypto Trends</h3>
+                  <Typography variant="body2">
+                    A full-stack app tracking cryptocurrency trends using real-time API data.
+                  </Typography>
+                  <Button
+                    variant="outlined"
+                    href="https://crypto-trends-kohl.vercel.app/"
+                    target="_blank"
+                    className="project-button"
+                  >
+                    View Project
+                  </Button>
+                </div>
+
+                {/* EESCL Uganda */}
+                <div className="project-tile">
+                  <img
+                    src="/assets/screenshots/EESCLUG.png"
+                    alt="EESCL Uganda"
+                    className="project-img"
+                  />
+                  <h3>EESCL Uganda</h3>
+                  <Typography variant="body2">
+                    A WordPress site for EESCL Uganda, showcasing CMS development and design skills.
+                  </Typography>
+                  <Button
+                    variant="outlined"
+                    href="https://eescluganda.wuaze.com/?i=1"
+                    target="_blank"
+                    className="project-button"
+                  >
+                    View Project
+                  </Button>
+                </div>
+
+                {/* Distance Calculator */}
+                <div className="project-tile">
+                  <img
+                    src="/assets/screenshots/calc.png"
+                    alt="Distance Calculator"
+                    className="project-img"
+                  />
+                  <h3>Distance Calculator</h3>
+                  <Typography variant="body2">
+                    A React app that calculates distances between addresses or coordinates 
+                    using OpenCage and the Haversine formula.
+                  </Typography>
+                  <Button
+                    variant="outlined"
+                    href="https://distance-calculator-omega.vercel.app/"
+                    target="_blank"
+                    className="project-button"
+                  >
+                    View Project
+                  </Button>
+                </div>
+
+                {/* Coming Soon */}
+                <div className="project-tile">
+                  <img
+                    src="/assets/placeholder.jpg"
+                    alt="Coming Soon"
+                    className="project-img"
+                  />
+                  <h3>Coming Soon</h3>
+                  <Typography variant="body2">
+                    A new project is in development. Stay tuned for updates!
+                  </Typography>
+                  <Button variant="outlined" disabled className="project-button">
+                    View Project
+                  </Button>
+                </div>
+              </div>
             )}
 
-            
+            <Button
+              variant="contained"
+              onClick={() => setShowMore(!showMore)}
+              sx={{ mt: 3 }}
+            >
+              {showMore ? 'Show Less' : 'View More'}
+            </Button>
           </Box>
         </Container>
       </section>
