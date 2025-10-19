@@ -187,3 +187,49 @@ h2::after {
   border-color: #1976d2;
 }
 
+/* ---------- CONTACT SECTION ---------- */
+.contact {
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+}
+
+.contact h2 {
+  color: #0d47a1;
+}
+
+/* ---------- FADE ANIMATIONS ---------- */
+.fade-in {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 600px) {
+  .welcome h1 {
+    font-size: 2rem;
+  }
+
+  .welcome p {
+    font-size: 1.2rem;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  .section {
+    padding: 50px 0;
+  }
+
+  .featured {
+    margin: 0 10px;
+  }
+}
