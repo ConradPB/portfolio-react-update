@@ -59,7 +59,23 @@ function App() {
           <Box className="fade-in">
             <h2>Work</h2>
             <div className="projects-grid">
-              <div className="project-tile">
+
+               <div className="project-tile">
+                  <img src="/assets/placeholder.jpg" alt="Coming Soon" className="project-img" />
+                  <h3>Coming Soon</h3>
+                  <Typography variant="body2">
+                    A new project is in development. Stay tuned for updates
+                  </Typography>
+                  <Button
+                    variant="outlined"
+                    disabled
+                    className="project-button"
+                  >
+                    View Project
+                  </Button>
+                </div>
+              </div>
+            <div className="project-tile">
                 <img src="/assets/screenshots/microloan-tracker.png" alt="Microloan Tracker" className="project-img" />
                 <h3>Microloan Tracker</h3>
                 <Typography variant="body2">
