@@ -70,7 +70,7 @@ function App() {
                 <h3>ShopSphere</h3>
                 <Typography variant="body2">
                   Modern E-Commerce Store — a full-featured prototype with advanced UI, smooth animations, 
-                  and a scalable structure ready for AI and blockchain integration.
+                  and a scalable structure.
                 </Typography>
                 <Button
                   variant="outlined"
