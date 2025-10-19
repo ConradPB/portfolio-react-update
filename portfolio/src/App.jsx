@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { AppBar, Toolbar, Typography, Button, Container, Box } from '@mui/material';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 function App() {
   const [copied, setCopied] = useState(false);
@@ -118,68 +118,89 @@ function App() {
               </motion.div>
             </div>
 
-            {/* Other Projects */}
-            <h2 style={{ marginTop: '60px' }}>More Projects</h2>
-            <div className="projects-grid">
-              <motion.div className="project-tile" whileHover={{ scale: 1.02 }}>
-                <img src="/assets/screenshots/crypto-trends.png" alt="Crypto Trends" className="project-img" />
-                <h3>Crypto Trends</h3>
-                <Typography variant="body2">
-                  A full-stack app visualizing cryptocurrency trends in real time with API-driven analytics.
-                </Typography>
-                <Button
-                  variant="outlined"
-                  href="https://crypto-trends-kohl.vercel.app/"
-                  target="_blank"
-                  className="project-button"
-                >
-                  View Project
-                </Button>
-              </motion.div>
+            {/* View More Button (shows/hides lower projects) */}
+            <Box sx={{ display: 'flex', justifyContent: 'center', mt: 4 }}>
+              <Button
+                variant="contained"
+                onClick={() => setShowMore(prev => !prev)}
+                sx={{ textTransform: 'none', borderRadius: '8px', fontWeight: 600 }}
+              >
+                {showMore ? 'Show Less' : 'View More'}
+              </Button>
+            </Box>
 
-              <motion.div className="project-tile" whileHover={{ scale: 1.02 }}>
-                <img src="/assets/screenshots/EESCLUG.png" alt="EESCL Uganda" className="project-img" />
-                <h3>EESCL Uganda</h3>
-                <Typography variant="body2">
-                  A WordPress-based site for EESCL Uganda, showcasing CMS integration and responsive layout design.
-                </Typography>
-                <Button
-                  variant="outlined"
-                  href="https://eescluganda.wuaze.com/?i=1"
-                  target="_blank"
-                  className="project-button"
+            {/* Lower projects: hidden until showMore === true */}
+            <AnimatePresence>
+              {showMore && (
+                <motion.div
+                  className="projects-grid"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 10 }}
+                  transition={{ duration: 0.5 }}
                 >
-                  View Project
-                </Button>
-              </motion.div>
+                  <motion.div className="project-tile" whileHover={{ scale: 1.02 }}>
+                    <img src="/assets/screenshots/crypto-trends.png" alt="Crypto Trends" className="project-img" />
+                    <h3>Crypto Trends</h3>
+                    <Typography variant="body2">
+                      A full-stack app visualizing cryptocurrency trends in real time with API-driven analytics.
+                    </Typography>
+                    <Button
+                      variant="outlined"
+                      href="https://crypto-trends-kohl.vercel.app/"
+                      target="_blank"
+                      className="project-button"
+                    >
+                      View Project
+                    </Button>
+                  </motion.div>
 
-              <motion.div className="project-tile" whileHover={{ scale: 1.02 }}>
-                <img src="/assets/screenshots/calc.png" alt="Distance Calculator" className="project-img" />
-                <h3>Distance Calculator</h3>
-                <Typography variant="body2">
-                  A React app calculating distances between two points using OpenCage API and the Haversine formula.
-                </Typography>
-                <Button
-                  variant="outlined"
-                  href="https://distance-calculator-omega.vercel.app/"
-                  target="_blank"
-                  className="project-button"
-                >
-                  View Project
-                </Button>
-              </motion.div>
+                  <motion.div className="project-tile" whileHover={{ scale: 1.02 }}>
+                    <img src="/assets/screenshots/EESCLUG.png" alt="EESCL Uganda" className="project-img" />
+                    <h3>EESCL Uganda</h3>
+                    <Typography variant="body2">
+                      A WordPress-based site for EESCL Uganda, showcasing CMS integration and responsive layout design.
+                    </Typography>
+                    <Button
+                      variant="outlined"
+                      href="https://eescluganda.wuaze.com/?i=1"
+                      target="_blank"
+                      className="project-button"
+                    >
+                      View Project
+                    </Button>
+                  </motion.div>
 
-              <motion.div className="project-tile" whileHover={{ scale: 1.02 }}>
-                <img src="/assets/placeholder.jpg" alt="Coming Soon" className="project-img" />
-                <h3>Coming Soon</h3>
-                <Typography variant="body2">
-                  A new project is in development. Stay tuned for updates!
-                </Typography>
-                <Button variant="outlined" disabled className="project-button">
-                  View Project
-                </Button>
-              </motion.div>
-            </div>
+                  <motion.div className="project-tile" whileHover={{ scale: 1.02 }}>
+                    <img src="/assets/screenshots/calc.png" alt="Distance Calculator" className="project-img" />
+                    <h3>Distance Calculator</h3>
+                    <Typography variant="body2">
+                      A React app calculating distances between two points using OpenCage API and the Haversine formula.
+                    </Typography>
+                    <Button
+                      variant="outlined"
+                      href="https://distance-calculator-omega.vercel.app/"
+                      target="_blank"
+                      className="project-button"
+                    >
+                      View Project
+                    </Button>
+                  </motion.div>
+
+                  <motion.div className="project-tile" whileHover={{ scale: 1.02 }}>
+                    <img src="/assets/placeholder.jpg" alt="Coming Soon" className="project-img" />
+                    <h3>Coming Soon</h3>
+                    <Typography variant="body2">
+                      A new project is in development. Stay tuned for updates!
+                    </Typography>
+                    <Button variant="outlined" disabled className="project-button">
+                      View Project
+                    </Button>
+                  </motion.div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+
           </Box>
         </Container>
       </section>
