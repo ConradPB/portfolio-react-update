@@ -53,7 +53,67 @@ function App() {
         </Container>
       </section>
 
-     
+      <section id="work" className="section work">
+        <Container>
+          <Box className="fade-in">
+            <h2>Work</h2>
+
+            {/* --- Upper Section: Two Main Projects --- */}
+            <div className="projects-grid">
+              {/* 🆕 ShopSphere */}
+              <div className="project-tile">
+                <img
+                  src="/assets/screenshots/ShopSphere.png"
+                  alt="ShopSphere"
+                  className="project-img"
+                />
+                <h3>ShopSphere</h3>
+                <Typography variant="body2">
+                  Modern E-Commerce Store — a full-featured prototype with advanced UI, smooth animations, 
+                  and a scalable structure ready for AI and blockchain integration.
+                </Typography>
+                <Button
+                  variant="outlined"
+                  href="https://shop-sphere-rouge-iota.vercel.app/"
+                  target="_blank"
+                  className="project-button"
+                >
+                  View Project
+                </Button>
+              </div>
+
+              {/* Microloan Tracker */}
+              <div className="project-tile">
+                <img
+                  src="/assets/screenshots/microloan-tracker.png"
+                  alt="Microloan Tracker"
+                  className="project-img"
+                />
+                <h3>Microloan Tracker</h3>
+                <Typography variant="body2">
+                  A full-stack app for tracking microloans, built with React and a backend server.
+                </Typography>
+                <Button
+                  variant="outlined"
+                  href="https://microloan-tracker.vercel.app/"
+                  target="_blank"
+                  className="project-button"
+                >
+                  View Project
+                </Button>
+              </div>
+            </div>
+
+            {/* --- Lower Section (showMore) --- */}
+            {showMore && (
+              
+            )}
+
+            
+          </Box>
+        </Container>
+      </section>
+
     </div>
   );
 }
