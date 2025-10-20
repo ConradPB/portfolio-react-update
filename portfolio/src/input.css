@@ -1,0 +1,4 @@
+/* Tailwind v4 recommendation: import the framework */
+@import "tailwindcss";
+
+/* optional: you can also include custom overrides below */
