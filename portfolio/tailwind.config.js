@@ -6,7 +6,7 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily: {
+      fontFamy: {
         sans: ['Inter','Poppins','system-ui','-apple-system','Segoe UI','Roboto','sans-serif'],
       },
       colors: {
