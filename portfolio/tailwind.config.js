@@ -9,11 +9,7 @@ export default {
       fontFamily: {
         sans: ['Inter','Poppins','system-ui','-apple-system','Segoe UI','Roboto','sans-serif'],
       },
-      colors: {
-        primary: '#1976d2',
-        secondary: '#6a5acd',
-        accent: '#42a5f5'
-      }
+      
     }
   },
   plugins: [],
