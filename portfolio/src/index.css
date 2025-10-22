@@ -1,11 +1,6 @@
-/* src/input.css - Tailwind + custom styles */
+@import "tailwindcss";
 
-/* === Tailwind directives (required for the utility classes) === */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* === Your existing custom CSS (appended after Tailwind directives) === */
+/* === existing custom CSS (appended after Tailwind directives) === */
 /* ---------- GLOBAL STYLES ---------- */
 body {
   margin: 0;
