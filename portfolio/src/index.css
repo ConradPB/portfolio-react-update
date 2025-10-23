@@ -224,3 +224,10 @@ h2::after {
   }
 }
 
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 800px) {
+  .welcome h1 { font-size: 2.2rem; }
+  .featured { max-width: 100%; flex-basis: 100%; }
+  .profile-pic { width: 140px; height: 140px; }
+  .project-img { height: 160px; }
+}
