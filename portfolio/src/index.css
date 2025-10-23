@@ -150,3 +150,41 @@ h2::after {
   line-height: 1.6;
 }
 
+/* smaller projects grid hidden by default until View More shows them */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 26px;
+  transition: all 0.45s ease;
+  opacity: 1;
+}
+
+.projects-grid.hidden {
+  opacity: 0;
+  transform: translateY(18px);
+  pointer-events: none;
+}
+
+/* Tiles */
+.project-tile {
+  background-color: #fbfcff;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(31, 58, 136, 0.04);
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.project-tile:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(31, 58, 136, 0.08);
+}
+
+.project-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
