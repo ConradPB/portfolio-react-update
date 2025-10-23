@@ -188,3 +188,39 @@ h2::after {
   margin-bottom: 12px;
 }
 
+/* Buttons */
+.project-button {
+  margin-top: 12px;
+  border-radius: 10px;
+  font-weight: 700;
+  text-transform: none;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.project-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(25,118,210,0.18);
+  background-color: #1565c0;
+  color: #fff;
+}
+
+/* ---------- CONTACT ---------- */
+.contact {
+  background: linear-gradient(135deg, #eaf4ff, #e6ecff);
+  padding-bottom: 80px;
+}
+
+/* ---------- UTILITIES ---------- */
+.fade-in {
+  opacity: 0;
+  transform: translateY(18px);
+  animation: fadeIn 0.9s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
