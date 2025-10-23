@@ -61,3 +61,44 @@ body {
   color: rgba(235, 245, 255, 0.95);
 }
 
+/* ---------- PROFILE ---------- */
+.profile-pic-container {
+  text-align: center;
+  margin: -88px 0 10px 0; /* overlap slightly more */
+  position: relative;
+  z-index: 10;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid white;
+  box-shadow: 0 18px 40px rgba(13,71,161,0.12);
+  transition: transform 0.35s cubic-bezier(.2,.9,.2,1), box-shadow 0.35s ease;
+}
+
+.profile-pic:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 24px 60px rgba(13,71,161,0.18);
+}
+
+/* ---------- HEADINGS ---------- */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  color: #072548; /* richer heading color */
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  width: 56px;
+  height: 4px;
+  display: block;
+  margin: 10px auto 0;
+  background: linear-gradient(90deg, #42a5f5, #6a5acd);
+  border-radius: 2px;
+}
+
