@@ -102,3 +102,51 @@ h2::after {
   border-radius: 2px;
 }
 
+/* ---------- PROJECTS SECTION (basic emphasis) ---------- */
+.work {
+  background-color: #fff;
+  padding-bottom: 48px;
+}
+
+.featured-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 36px;
+  margin-top: 24px;
+  align-items: stretch;
+}
+
+/* Featured: bigger, centered cards — obvious visual test */
+.featured {
+  max-width: 540px;
+  flex: 1 1 460px;
+  background: linear-gradient(145deg, #ffffff, #f6f7ff);
+  border: 2px solid rgba(106,90,205,0.18);
+  box-shadow: 0 22px 40px rgba(33, 64, 154, 0.06);
+  transition: transform 0.45s cubic-bezier(.2,.9,.2,1), box-shadow 0.45s ease, border-color 0.3s ease;
+  border-radius: 18px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.featured:hover {
+  transform: translateY(-14px) scale(1.02);
+  box-shadow: 0 40px 80px rgba(33, 64, 154, 0.12);
+  border-color: rgba(106,90,205,0.32);
+}
+
+.featured h3 {
+  font-size: 1.5rem;
+  margin: 12px 0 8px 0;
+  color: #1b1f3a;
+}
+
+.featured .MuiTypography-body2,
+.featured p {
+  color: #4a4f66;
+  line-height: 1.6;
+}
+
