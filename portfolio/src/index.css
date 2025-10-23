@@ -1,0 +1,63 @@
+
+@import "tailwindcss";
+
+/* ---------- GLOBAL STYLES (basic test) ---------- */
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  /* slightly brighter canvas for contrast */
+  background-color: #f3f6fb;
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+.App {
+  overflow-x: hidden;
+}
+
+/* ---------- APP BAR (deeper gradient) ---------- */
+.app-bar {
+  background: linear-gradient(90deg, #1565c0, #42a5f5); /* deeper left tone */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(6px);
+}
+
+.app-bar::after {
+  content: '';
+  display: block;
+  height: 3px;
+  background: linear-gradient(90deg, #6a5acd, #9b8cff);
+}
+
+/* ---------- SECTIONS ---------- */
+.section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.welcome {
+  background: linear-gradient(135deg, #1976d2, #0d47a1);
+  color: white;
+  min-height: 64vh; /* slightly taller hero */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 40px 0;
+}
+
+/* bigger, bolder hero for the test */
+.welcome h1 {
+  font-size: 3.4rem;
+  margin: 0 0 8px 0;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  text-shadow: 0 6px 22px rgba(13,71,161,0.25);
+}
+
+.welcome p {
+  font-size: 1.25rem;
+  margin: 0;
+  color: rgba(235, 245, 255, 0.95);
+}
+
