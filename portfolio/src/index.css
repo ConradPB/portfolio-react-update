@@ -194,7 +194,7 @@ h2::after {
   border-radius: 10px;
   font-weight: 700;
   text-transform: none;
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
+ transform 0.18s ease, box-shadow 0.18s ease;
 }
 
 .project-button:hover {
