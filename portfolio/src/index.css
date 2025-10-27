@@ -99,3 +99,76 @@ h2::after {
   border-radius: 2px;
 }
 
+/* ---------- PROJECTS SECTION ---------- */
+.work {
+  background-color: #fff0f7;
+  padding-bottom: 48px;
+}
+
+.featured-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 36px;
+  margin-top: 24px;
+  align-items: stretch;
+}
+
+/* Featured projects */
+.featured {
+  max-width: 540px;
+  flex: 1 1 460px;
+  background: linear-gradient(145deg, #ffffff, #ffe4ef);
+  border: 2px solid rgba(236, 72, 153, 0.25);
+  box-shadow: 0 22px 40px rgba(236, 72, 153, 0.15);
+  border-radius: 18px;
+  padding: 22px;
+  transition: transform 0.45s ease, box-shadow 0.45s ease, border-color 0.3s ease;
+}
+
+.featured:hover {
+  transform: translateY(-14px) scale(1.02);
+  box-shadow: 0 40px 80px rgba(236, 72, 153, 0.25);
+  border-color: rgba(236, 72, 153, 0.45);
+}
+
+.featured h3 {
+  font-size: 1.5rem;
+  margin: 12px 0 8px 0;
+  color: #5b0f6b;
+}
+
+.featured p {
+  color: #6d446b;
+  line-height: 1.6;
+}
+
+/* ---------- PROJECT TILES ---------- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 26px;
+}
+
+.project-tile {
+  background-color: #fff9fb;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(236, 72, 153, 0.12);
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.project-tile:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(236, 72, 153, 0.24);
+}
+
+.project-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
