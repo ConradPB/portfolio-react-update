@@ -215,7 +215,7 @@ h2::after {
   opacity: 0;
   transform: translateY(18px);
   animation: fadeIn 0.9s ease forwards;
-}
+
 
 @keyframes fadeIn {
   to {
