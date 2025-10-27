@@ -210,7 +210,7 @@ h2::after {
   padding-bottom: 80px;
 }
 
-/* ---------- UTILI*/
+/* ---------- UTILITIES ---------- */
 .fade-in {
   opacity: 0;
   transform: translateY(18px);
