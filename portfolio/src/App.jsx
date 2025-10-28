@@ -277,7 +277,7 @@ function App() {
                     <img src="/assets/placeholder.jpg" alt="Coming Soon placeholder" className="project-img" />
                     <h3>Coming Soon</h3>
                     <Typography variant="body2">
-                      I'm actively working on a new project — details coming soon!
+                      I&apos;m actively working on a new project — details coming soon!
                     </Typography>
                     <Button variant="outlined" disabled className="project-button">
                       View Project
