@@ -172,3 +172,32 @@ h2::after {
   margin-bottom: 12px;
 }
 
+/* ---------- BUTTONS ---------- */
+.project-button {
+  margin-top: 12px;
+  border-radius: 10px;
+  font-weight: 700;
+  background-color: #ec4899;
+  color: white;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
+}
+
+.project-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(236, 72, 153, 0.35);
+  background-color: #a21caf;
+}
+
+/* ---------- CONTACT ---------- */
+.contact {
+  background: linear-gradient(135deg, #fff0f7, #ffe4ef);
+  padding-bottom: 80px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 800px) {
+  .welcome h1 { font-size: 2.3rem; }
+  .featured { max-width: 100%; flex-basis: 100%; }
+  .profile-pic { width: 140px; height: 140px; }
+  .project-img { height: 160px; }
+}
