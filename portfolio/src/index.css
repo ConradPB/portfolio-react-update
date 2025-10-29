@@ -132,3 +132,21 @@ body {
   box-shadow: 0 28px 70px rgba(15,23,42,0.16);
 }
 
+/* ---------- SECTION TITLES ---------- */
+h2 {
+  font-size: 1.7rem;
+  margin-bottom: 8px;
+  color: #0f172a;
+  letter-spacing: -0.2px;
+}
+
+h2::after{
+  content:'';
+  display:block;
+  width:56px;
+  height:4px;
+  margin:10px auto 0;
+  border-radius:3px;
+  background: linear-gradient(90deg, rgba(79,70,229,0.95), rgba(236,72,153,0.95));
+}
+
