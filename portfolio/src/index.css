@@ -249,3 +249,16 @@ h2::after{
   transform: translateY(-2px);
 }
 
+/* outlined buttons (repos / view) */
+.MuiButton-outlined {
+  border-color: rgba(15,23,42,0.06);
+  color: #071035;
+}
+.MuiButton-outlined:hover {
+  border-color: rgba(79,70,229,0.14);
+  background: rgba(79,70,229,0.02);
+}
+
+/* View more button container */
+.view-more-wrap { margin-top: 30px; display:flex; justify-content:center; }
+
