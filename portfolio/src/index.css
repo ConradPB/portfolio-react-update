@@ -262,3 +262,12 @@ h2::after{
 /* View more button container */
 .view-more-wrap { margin-top: 30px; display:flex; justify-content:center; }
 
+/* ---------- CONTACT ---------- */
+.contact {
+  background: linear-gradient(180deg, rgba(246,248,251,1), rgba(245,247,255,1));
+  padding-bottom: 88px;
+}
+
+/* footer-ish contact area */
+.contact .MuiTypography-body1 { color: #0b1220; }
+
