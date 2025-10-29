@@ -60,3 +60,27 @@ body {
   opacity: .95;
 }
 
+/* ---------- HERO / WELCOME ---------- */
+.section { padding: 72px 0; text-align: center; }
+
+.welcome {
+  background: linear-gradient(135deg, rgba(79,70,229,0.95), rgba(124,58,237,0.88));
+  color: white;
+  min-height: 64vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 48px 12px;
+  overflow: hidden;
+}
+
+/* hero content */
+.welcome h1 {
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: -0.6px;
+  line-height: 1.02;
+  text-shadow: 0 10px 30px rgba(15,23,42,0.18);
+}
