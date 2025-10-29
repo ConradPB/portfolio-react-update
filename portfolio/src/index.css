@@ -109,3 +109,26 @@ body {
   mix-blend-mode: overlay;
 }
 
+/* ---------- PROFILE ---------- */
+.profile-pic-container {
+  text-align: center;
+  margin: -92px 0 12px;
+  position: relative;
+  z-index: 30;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 6px solid var(--glass-strong);
+  box-shadow: 0 20px 50px rgba(15,23,42,0.12);
+  transition: transform 350ms cubic-bezier(.2,.9,.2,1), box-shadow 350ms ease;
+}
+
+.profile-pic:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 28px 70px rgba(15,23,42,0.16);
+}
+
