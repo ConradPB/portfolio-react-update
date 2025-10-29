@@ -223,3 +223,10 @@ h2::after{
   box-shadow: 0 22px 50px rgba(15,23,42,0.08);
 }
 
+/* project tile title and text */
+.project-tile h3, .project-tile h3 + p {
+  margin: 8px 0;
+}
+.project-tile h3 { font-size: 1.05rem; color: #071035; }
+.project-tile p, .project-tile .MuiTypography-body2 { color: var(--muted); line-height:1.6; }
+
