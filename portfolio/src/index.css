@@ -1,0 +1,62 @@
+/* If using Tailwind v4, ensure @import "tailwindcss" is present */
+@import "tailwindcss";
+
+/* ---------- GLOBAL ---------- */
+:root{
+  --bg: #f6f8fb;        /* neutral page background */
+  --muted: #6b7280;     /* muted text */
+  --text: #111827;      /* main text */
+  --indigo-700: #4f46e5;/* primary indigo */
+  --purple-600: #7c3aed;/* purple mid */
+  --pink-500: #ec4899;  /* accent pink */
+  --card: #ffffff;      /* card */
+  --glass: rgba(255,255,255,0.65);
+  --glass-strong: rgba(255,255,255,0.85);
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background-color: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+/* App root */
+.App {
+  overflow-x: hidden;
+  min-height: 100vh;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ---------- APP BAR ---------- */
+.app-bar {
+  background: linear-gradient(90deg, var(--indigo-700), var(--purple-600), var(--pink-500));
+  box-shadow: 0 8px 28px rgba(16,24,40,0.08);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  padding: 0 6px;
+}
+
+/* thin accent line */
+.app-bar::after {
+  content: '';
+  display: block;
+  height: 3px;
+  background: linear-gradient(90deg, rgba(124,58,237,0.9), rgba(236,72,153,0.9));
+}
+
+/* Navbar link tweaks (MUI Buttons will pick these up) */
+.app-bar .MuiButton-root {
+  text-transform: none;
+  font-weight: 600;
+  color: rgba(255,255,255,0.92);
+  transition: transform .18s ease, opacity .18s ease;
+}
+.app-bar .MuiButton-root:hover {
+  transform: translateY(-2px);
+  opacity: .95;
+}
+
