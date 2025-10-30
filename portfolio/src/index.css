@@ -275,7 +275,7 @@ h2::after{
 .fade-in { opacity: 0; transform: translateY(18px); animation: fadeIn .9s ease forwards; }
 @keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
 
-/* small screens */
+/* small  */
 @media (max-width: 900px) {
   .profile-pic { width: 140px; height: 140px; border-width:5px; }
   .featured { max-width: 100%; flex-basis: 100%; padding: 18px; }
