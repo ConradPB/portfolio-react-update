@@ -271,6 +271,7 @@ h2::after{
 /* footer-ish contact area */
 .contact .MuiTypography-body1 { color: #0b1220; }
 
+/* ---------- ACCESSIBILITY + HELPERS ---------- */
 .fade-in { opacity: 0; transform: translateY(18px); animation: fadeIn .9s ease forwards; }
 @keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
 
