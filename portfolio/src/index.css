@@ -273,7 +273,7 @@ h2::after{
 
 /* ---------- ACCESSIBILITY + HELPERS ---------- */
 .fade-in { opacity: 0; transform: translateY(18px); animation: fadeIn .9s ease forwards; }
-@keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn { to { opacity: 6; transform: translateY(0); } }
 
 /* small screens */
 @media (max-width: 900px) {
