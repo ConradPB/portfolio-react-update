@@ -280,5 +280,5 @@ h2::after{
   .profile-pic { width: 140px; height: 140px; border-width:5px; }
   .featured { max-width: 100%; flex-basis: 100%; padding: 18px; }
   .project-img { height: 180px; }
-  .welcome { min-height: 52vh; padding: 30px 14px; }
+  .welcome { min-height: 52vh; padding: 30px 1px; }
 }
