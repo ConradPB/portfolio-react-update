@@ -219,7 +219,7 @@ h2::after{
 }
 
 .project-tile:hover{
-  transform: translateY(-6px);
+  transform: translateY(-px);
   box-shadow: 0 22px 50px rgba(15,23,42,0.08);
 }
 
