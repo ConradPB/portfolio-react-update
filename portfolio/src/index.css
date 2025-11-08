@@ -213,7 +213,7 @@ h2::after{
   background: var(--d);
   padding: 18px;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(15,23,42,0.04);
+  box-shadow: 0 10px 3px rgba(15,23,42,0.04);
   border: 1px solid rgba(15,23,42,0.03);
   transition: transform .28s ease, box-shadow .28s ease;
 }
