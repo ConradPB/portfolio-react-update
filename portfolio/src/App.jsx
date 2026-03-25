@@ -152,6 +152,35 @@ function App() {
 }
 
 // Sub-component for Project Cards
-
+function ProjectCard({ title, desc, img, link, tags }) {
+  return (
+    <motion.div 
+      whileHover={{ y: -10 }}
+      className="glass-panel rounded-2xl overflow-hidden flex flex-col h-full"
+    >
+      <div className="h-56 overflow-hidden">
+        <img src={img} alt={title} className="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
+      </div>
+      <div className="p-6 flex flex-col flex-grow">
+        <div className="flex gap-2 mb-3">
+          {tags.map(tag => (
+            <span key={tag} className="text-[10px] uppercase tracking-widest px-2 py-1 bg-white/5 rounded text-brand-accent font-bold">
+              {tag}
+            </span>
+          ))}
+        </div>
+        <Typography variant="h5" className="font-bold mb-2">{title}</Typography>
+        <Typography variant="body2" className="text-brand-text-muted mb-6 leading-relaxed">
+          {desc}
+        </Typography>
+        <div className="mt-auto">
+          <Button href={link} target="_blank" variant="text" className="!text-brand-accent !font-bold">
+            View Live Site →
+          </Button>
+        </div>
+      </div>
+    </motion.div>
+  );
+}
 
 export default App;
