@@ -115,4 +115,43 @@ function App() {
         </Container>
       </section>
 
-      
+      {/* CONTACT SECTION */}
+      <section id="contact" className="py-32">
+        <Container maxWidth="sm">
+          <div className="glass-panel p-10 rounded-3xl text-center">
+            <Typography variant="h4" className="font-bold mb-4">Let&apos;s talk.</Typography>
+            <Typography className="text-brand-text-muted mb-8">
+              I’m currently open to new opportunities and freelance collaborations.
+            </Typography>
+            
+            <div className="flex flex-col gap-4">
+              <Button 
+                variant="outlined" 
+                onClick={copyEmail}
+                startIcon={copied ? <CheckIcon /> : <ContentCopyIcon />}
+                fullWidth
+                sx={{ py: 1.5, borderColor: 'rgba(255,255,255,0.1)', color: 'white' }}
+              >
+                {copied ? 'Email Copied!' : 'cpbmbaz57@gmail.com'}
+              </Button>
+              <Button 
+                variant="contained" 
+                href="mailto:cpbmbaz57@gmail.com"
+                startIcon={<EmailIcon />}
+                fullWidth
+                sx={{ py: 1.5, bgcolor: 'white', color: 'black', '&:hover': { bgcolor: '#e2e8f0' } }}
+              >
+                Send Message
+              </Button>
+            </div>
+          </div>
+        </Container>
+      </section>
+    </div>
+  );
+}
+
+// Sub-component for Project Cards
+
+
+export default App;
