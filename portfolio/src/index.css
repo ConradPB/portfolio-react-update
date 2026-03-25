@@ -1,284 +1,60 @@
-/* If using Tailwind v4, ensure @import "tailwindcss" is present */
 @import "tailwindcss";
 
-/* ---------- GLOBAL ---------- */
-:root{
-  --bg: #f6f8fb;        /* neutral page background */
-  --muted: #6b7280;     /* muted text */
-  --text: #111827;      /* main text */
-  --indigo-700: #4f46e5;/* primary indigo */
-  --purple-600: #7c3aed;/* purple mid */
-  --pink-500: #ec4899;  /* accent pink */
-  --card: #ffffff;      /* card */
-  --glass: rgba(255,255,255,0.65);
-  --glass-strong: rgba(255,255,255,0.85);
+@theme {
+  --color-brand-bg: #030712;
+  --color-brand-card: #0f172a;
+  --color-brand-accent: #10b981; /* Emerald */
+  --color-brand-text-muted: #94a3b8;
+  
+  --font-sans: "Inter", "Poppins", ui-sans-serif, system-ui;
+}
+
+/* ---------- BASE REFINEMENTS ---------- */
+:root {
+  color-scheme: dark;
 }
 
 body {
+  @apply bg-brand-bg text-slate-50 antialiased selection:bg-emerald-500/30;
   margin: 0;
-  font-family: 'Inter', 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  background-color: var(--bg);
-  color: var(--text);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
 }
 
-/* App root */
-.App {
-  overflow-x: hidden;
-  min-height: 100vh;
-  -webkit-tap-highlight-color: transparent;
+/* ---------- CUSTOM COMPONENTS ---------- */
+.glass-panel {
+  @apply bg-slate-900/40 backdrop-blur-xl border border-white/5 shadow-2xl;
 }
 
-/* ---------- APP BAR ---------- */
-.app-bar {
-  background: linear-gradient(90deg, var(--indigo-700), var(--purple-600), var(--pink-500));
-  box-shadow: 0 8px 28px rgba(16,24,40,0.08);
-  backdrop-filter: blur(6px);
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-  padding: 0 6px;
+.hero-gradient {
+  background: radial-gradient(circle at 50% -20%, #1e293b 0%, #030712 100%);
 }
 
-/* thin accent line */
-.app-bar::after {
-  content: '';
-  display: block;
-  height: 3px;
-  background: linear-gradient(90deg, rgba(124,58,237,0.9), rgba(236,72,153,0.9));
-}
-
-/* Navbar link tweaks (MUI Buttons will pick these up) */
-.app-bar .MuiButton-root {
-  text-transform: none;
-  font-weight: 600;
-  color: rgba(255,255,255,0.92);
-  transition: transform .18s ease, opacity .18s ease;
-}
-.app-bar .MuiButton-root:hover {
-  transform: translateY(-2px);
-  opacity: .95;
-}
-
-/* ---------- HERO / WELCOME ---------- */
-.section { padding: 72px 0; text-align: center; }
-
-.welcome {
-  background: linear-gradient(135deg, rgba(79,70,229,0.95), rgba(124,58,237,0.88));
-  color: white;
-  min-height: 64vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  padding: 48px 12px;
-  overflow: hidden;
-}
-
-/* hero content */
-.welcome h1 {
-  font-size: clamp(2rem, 4.5vw, 3.2rem);
-  margin: 0;
-  font-weight: 800;
-  letter-spacing: -0.6px;
-  line-height: 1.02;
-  text-shadow: 0 10px 30px rgba(15,23,42,0.18);
-}
-
-.welcome p {
-  margin-top: 12px;
-  font-size: clamp(1rem, 1.6vw, 1.125rem);
-  font-weight: 400;
-  color: rgba(255,255,255,0.92);
-  max-width: 920px;
-}
-
-/* subtle decorative gradient blob (purely visual) */
-.welcome::before{
-  content:'';
-  position: absolute;
-  right: -120px;
-  top: -80px;
-  width: 420px;
-  height: 420px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, rgba(236,72,153,0.22), transparent 40%),
-              radial-gradient(circle at 60% 70%, rgba(124,58,237,0.14), transparent 45%);
-  filter: blur(32px);
-  pointer-events: none;
-  mix-blend-mode: overlay;
-}
-
-/* ---------- PROFILE ---------- */
-.profile-pic-container {
-  text-align: center;
-  margin: -92px 0 12px;
-  position: relative;
-  z-index: 30;
-}
-
-.profile-pic {
-  width: 180px;
-  height: 180px;
-  border-radius: 999px;
-  object-fit: cover;
-  border: 6px solid var(--glass-strong);
-  box-shadow: 0 20px 50px rgba(15,23,42,0.12);
-  transition: transform 350ms cubic-bezier(.2,.9,.2,1), box-shadow 350ms ease;
-}
-
-.profile-pic:hover {
-  transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 28px 70px rgba(15,23,42,0.16);
-}
-
-/* ---------- SECTION TITLES ---------- */
+/* Refined H2 with modern underline */
 h2 {
-  font-size: 1.7rem;
-  margin-bottom: 8px;
-  color: #0f172a;
-  letter-spacing: -0.2px;
+  @apply text-3xl font-bold tracking-tight mb-4 relative inline-block;
 }
 
-h2::after{
-  content:'';
-  display:block;
-  width:56px;
-  height:4px;
-  margin:10px auto 0;
-  border-radius:3px;
-  background: linear-gradient(90deg, rgba(79,70,229,0.95), rgba(236,72,153,0.95));
+h2::after {
+  content: '';
+  @apply absolute -bottom-2 left-0 w-12 h-1 bg-brand-accent rounded-full;
 }
 
-/* ---------- WORK / PROJECTS ---------- */
-.work { background: var(--bg); padding-top: 38px; padding-bottom: 60px; }
-
-/* Featured grid: center two cards nicely */
-.featured-grid {
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap: 28px;
-  margin-top: 20px;
-  align-items: stretch;
+/* ---------- ANIMATIONS ---------- */
+.nav-link {
+  @apply relative text-sm font-medium text-slate-400 transition-colors hover:text-white px-3 py-2;
 }
 
-/* Featured card */
-.featured{
-  max-width:560px;
-  flex: 1 1 460px;
-  background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(249,250,255,0.98));
-  border-radius: 18px;
-  padding: 22px;
-  box-shadow: 0 18px 40px rgba(15,23,42,0.06);
-  border: 1px solid rgba(16,24,40,0.04);
-  transition: transform .36s cubic-bezier(.2,.9,.2,1), box-shadow .36s ease, border-color .3s ease;
-  display:flex;
-  flex-direction:column;
-  justify-content: space-between;
+.nav-link::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-0 h-0.5 bg-brand-accent transition-all duration-300;
 }
 
-.featured:hover{
-  transform: translateY(-12px) scale(1.01);
-  box-shadow: 0 36px 80px rgba(15,23,42,0.09);
-  border-color: rgba(79,70,229,0.12);
+.nav-link:hover::after {
+  @apply w-full;
 }
 
-/* Featured title */
-.featured h3{ font-size: 1.25rem; margin: 12px 0 8px; color: #0b1220; }
-
-/* images inside cards */
-.project-img{
-  width:100%;
-  height: 240px;
-  object-fit: cover;
-  border-radius: 12px;
-  display:block;
-  margin-bottom: 14px;
-  box-shadow: 0 8px 28px rgba(15,23,42,0.06);
-}
-
-/* Projects grid for lower section: hidden by default (JS handles visibility) */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  margin-top: 26px;
-  align-items: start;
-  transition: all 420ms ease;
-}
-
-/* Single project tile */
-.project-tile{
-  background: var(--card);
-  padding: 18px;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(15,23,42,0.04);
-  border: 1px solid rgba(15,23,42,0.03);
-  transition: transform .28s ease, box-shadow .28s ease;
-}
-
-.project-tile:hover{
-  transform: translateY(-6px);
-  box-shadow: 0 22px 50px rgba(15,23,42,0.08);
-}
-
-/* project tile title and text */
-.project-tile h3, .project-tile h3 + p {
-  margin: 8px 0;
-}
-.project-tile h3 { font-size: 1.05rem; color: #071035; }
-.project-tile p, .project-tile .MuiTypography-body2 { color: var(--muted); line-height:1.6; }
-
-/* ---------- BUTTONS ---------- */
-.project-button{
-  border-radius: 10px;
-  font-weight: 700;
-  text-transform: none;
-  transition: transform .18s ease, box-shadow .18s ease, background-color .18s ease;
-}
-
-/* primary filled button style (used on featured cards) */
-.MuiButton-contained {
-  background: linear-gradient(90deg, var(--indigo-700), var(--purple-600));
-  color: white;
-  box-shadow: 0 10px 30px rgba(79,70,229,0.12);
-}
-.MuiButton-contained:hover {
-  box-shadow: 0 18px 46px rgba(124,58,237,0.14);
-  transform: translateY(-2px);
-}
-
-/* outlined buttons (repos / view) */
-.MuiButton-outlined {
-  border-color: rgba(15,23,42,0.06);
-  color: #071035;
-}
-.MuiButton-outlined:hover {
-  border-color: rgba(79,70,229,0.14);
-  background: rgba(79,70,229,0.02);
-}
-
-/* View more button container */
-.view-more-wrap { margin-top: 30px; display:flex; justify-content:center; }
-
-/* ---------- CONTACT ---------- */
-.contact {
-  background: linear-gradient(180deg, rgba(246,248,251,1), rgba(245,247,255,1));
-  padding-bottom: px;
-}
-
-/* footer-ish contact area */
-.contact .MuiTypography-body1 { color: #0b1220; }
-
-/* ---------- ACCESSIBILITY + HELPERS ---------- */
-.fade-in { opacity: 0; transform: translateY(18px); animation: fadeIn .9s ease forwards; }
-@keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
-
-/* small screens */
-@media (max-width: 900px) {
-  .profile-pic { width: 140px; height: 140px; border-width:5px; }
-  .featured { max-width: 100%; flex-basis: 100%; padding: 18px; }
-  .project-img { height: 180px; }
-  .welcome { min-height: 52vh; padding: 30px 14px; }
+/* Profile Image Glow */
+.profile-glow {
+  @apply relative rounded-full p-1 bg-gradient-to-tr from-emerald-500 to-cyan-500;
+  box-shadow: 0 0 40px rgba(16, 185, 129, 0.2);
 }
