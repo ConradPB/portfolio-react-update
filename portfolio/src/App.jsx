@@ -47,4 +47,72 @@ function App() {
         </Container>
       </AppBar>
 
+      {/* HERO SECTION */}
+      <section className="pt-32 pb-20 px-4 text-center">
+        <Container maxWidth="md">
+          <motion.div initial="hidden" animate="visible" variants={fadeUp}>
+            <Typography variant="overline" className="text-brand-accent font-bold tracking-widest">
+              Software Engineer
+            </Typography>
+            <Typography variant="h1" sx={{ fontSize: { xs: '3rem', md: '5rem' }, fontWeight: 900, mt: 2, mb: 3 }}>
+              Building the next <br /> generation of web.
+            </Typography>
+            <Typography variant="h6" className="text-brand-text-muted font-light leading-relaxed mb-10">
+              I specialize in high-performance frontends and scalable backends. 
+              Currently crafting <span className="text-white border-b border-brand-accent">Milkwize</span> and exploring Web3.
+            </Typography>
+            
+            <div className="flex justify-center gap-4">
+              <Button variant="contained" href="#work" disableElevation 
+                sx={{ bgcolor: 'var(--color-brand-accent)', '&:hover': { bgcolor: '#059669' }, borderRadius: 2, px: 4 }}>
+                View Projects
+              </Button>
+              <Button variant="outlined" href="#contact"
+                sx={{ borderColor: 'rgba(255,255,255,0.1)', color: 'white', borderRadius: 2, px: 4 }}>
+                Get In Touch
+              </Button>
+            </div>
+          </motion.div>
+        </Container>
+      </section>
+
+      {/* PROFILE PIC */}
+      <Box className="flex justify-center -mt-10 mb-20 relative z-10">
+        <motion.div whileHover={{ scale: 1.05 }} className="profile-glow">
+          <img 
+            src="/assets/screenshots/profile.jpg" 
+            alt="Conrad Mbaziira" 
+            className="w-40 h-40 rounded-full object-cover border-4 border-brand-bg"
+          />
+        </motion.div>
+      </Box>
+
+      {/* FEATURED WORK */}
+      <section id="work" className="py-20 bg-slate-950/50">
+        <Container maxWidth="lg">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
+            <h2>Featured Projects</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+              
+              {/* Project Card Component */}
+              <ProjectCard 
+                title="ShopSphere"
+                desc="Modern E-Commerce Store with real-time inventory and smooth Framer Motion transitions."
+                img="/assets/screenshots/ShopSphere.png"
+                link="https://shop-sphere-rouge-iota.vercel.app/"
+                tags={['React', 'Next.js', 'Tailwind']}
+              />
+              <ProjectCard 
+                title="Microloan Tracker"
+                desc="A full-stack financial dashboard for tracking loan dispersion and repayment analytics."
+                img="/assets/screenshots/microloan-tracker.png"
+                link="https://microloan-tracker.vercel.app/"
+                tags={['Node.js', 'PostgreSQL', 'MUI']}
+              />
+
+            </div>
+          </motion.div>
+        </Container>
+      </section>
+
       
