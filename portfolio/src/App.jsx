@@ -191,5 +191,34 @@ function App() {
   );
 }
 
+function ProjectCard({ title, desc, img, link, tags }) {
+  return (
+    <motion.div whileHover={{ y: -8 }} className="glass-panel rounded-2xl overflow-hidden flex flex-col">
+      <div className="h-48 overflow-hidden bg-slate-900">
+        <img src={img} alt={title} className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" />
+      </div>
+      <div className="p-6 flex flex-col flex-grow">
+        <div className="flex gap-2 mb-3">
+          {tags.map(tag => (
+            <span key={tag} className="text-[10px] uppercase font-bold text-brand-accent tracking-widest">{tag}</span>
+          ))}
+        </div>
+        <Typography variant="h6" className="font-bold mb-2">{title}</Typography>
+        <Typography variant="body2" className="text-slate-400 mb-6">{desc}</Typography>
+        <Button href={link} target="_blank" className="text-brand-accent! p-0 font-bold! text-xs! self-start">
+          View Details →
+        </Button>
+      </div>
+    </motion.div>
+  );
+}
+
+ProjectCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
 
 export default App;
