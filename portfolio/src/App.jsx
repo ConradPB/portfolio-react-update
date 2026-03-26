@@ -91,6 +91,111 @@ function App() {
         </Container>
       </section>
 
-     
+      {/* PRIMARY FEATURE: MILKWIZE */}
+      <section id="work" className="py-20">
+        <Container maxWidth="lg">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
+            <h2>Featured Impact</h2>
+            <div className="mt-12">
+              <div className="glass-panel rounded-3xl overflow-hidden grid grid-cols-1 lg:grid-cols-2 min-h-112.5">
+                <div className="p-8 md:p-12 flex flex-col justify-center">
+                  <div className="flex items-center gap-2 mb-4">
+                    <span className="w-8 h-px bg-brand-accent"></span>
+                    <span className="text-brand-accent font-bold text-xs tracking-widest uppercase">Major Project 2026</span>
+                  </div>
+                  <Typography variant="h3" className="font-bold mb-6">MilkWize</Typography>
+                  <Typography variant="body1" className="text-slate-300 mb-8 leading-relaxed">
+                    A professional-grade dairy management ecosystem built to solve connectivity and data challenges in East African agriculture. It empowers farmers to transform raw milk data into actionable financial and biological insights.
+                  </Typography>
+                  <div className="flex flex-wrap gap-2 mb-8">
+                    {['Kotlin', 'Offline-First', 'AgTech', 'Supabase'].map(tag => (
+                      <span key={tag} className="px-3 py-1 bg-white/5 text-slate-300 text-[10px] font-bold rounded border border-white/10 uppercase tracking-tighter">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <Typography variant="caption" className="text-brand-accent font-mono">
+                    [ Status: Beta Testing / MVP Architecture ]
+                  </Typography>
+                </div>
+                <div className="bg-slate-900/40 p-4 md:p-10 flex items-center justify-center relative overflow-hidden">
+                   <img 
+                      src="/assets/screenshots/MilkWize.jpeg" 
+                      alt="MilkWize Mobile Ecosystem" 
+                      className="w-full h-full object-cover rounded-2xl shadow-2xl border border-white/10"
+                   />
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </Container>
+      </section>
 
+      {/* TOP 3 GRID */}
+      <section className="pb-12">
+        <Container maxWidth="lg">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <ProjectCard 
+              title="African Legend"
+              desc="High-performance mobile game exploring African folklore through native storytelling."
+              img="/assets/screenshots/game-preview.png"
+              tags={['Kotlin', 'Game Engine']}
+              link="#"
+              isComingSoon
+            />
+            <ProjectCard 
+              title="ShopSphere"
+              desc="Next-gen E-commerce experience with real-time state management."
+              img="/assets/screenshots/ShopSphere.png"
+              tags={['React', 'Vercel']}
+              link="https://shop-sphere-rouge-iota.vercel.app/"
+            />
+            <ProjectCard 
+              title="Microloan Tracker"
+              desc="Financial dashboard for monitoring micro-finance dispersion and health."
+              img="/assets/screenshots/microloan-tracker.png"
+              tags={['Node.js', 'MUI']}
+              link="https://microloan-tracker.vercel.app/"
+            />
+          </div>
+
+          <div className="flex justify-center mt-12">
+            <Button 
+              onClick={() => setShowMore(!showMore)}
+              endIcon={showMore ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+              sx={{ color: 'var(--color-brand-accent)', fontWeight: 'bold' }}
+            >
+              {showMore ? "View Less" : "View More Projects"}
+            </Button>
+          </div>
+
+          <AnimatePresence>
+            {showMore && (
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 20 }}
+                className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8"
+              >
+                <ProjectCard 
+                  title="Crypto Trends"
+                  desc="Live market analytics platform visualizing real-time trading data."
+                  img="/assets/screenshots/crypto-trends.png"
+                  tags={['API', 'D3.js']}
+                  link="https://crypto-trends-kohl.vercel.app/"
+                />
+                <ProjectCard 
+                  title="EESCL Uganda"
+                  desc="Full-scale management portal for environmental consultancy."
+                  img="/assets/screenshots/EESCLUG.png"
+                  tags={['WordPress', 'UX Design']}
+                  link="https://eescluganda.wuaze.com/?i=1"
+                />
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </Container>
+      </section>
+
+     
 export default App;
