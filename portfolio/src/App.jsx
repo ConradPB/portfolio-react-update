@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { AppBar, Toolbar, Typography, Button, Container, Box, IconButton, Grid } from '@mui/material';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
@@ -14,7 +14,6 @@ const fadeUp = {
 
 function App() {
   const [copied, setCopied] = useState(false);
-  const [showMore, setShowMore] = useState(false);
 
   const copyEmail = async () => {
     await navigator.clipboard.writeText('cpbmbaz57@gmail.com');
@@ -25,10 +24,10 @@ function App() {
   return (
     <div className="min-h-screen hero-gradient">
       {/* NAVBAR */}
-      <AppBar position="sticky" elevation={0} className="glass-panel !bg-brand-bg/80">
+      <AppBar position="sticky" elevation={0} className="glass-panel bg-brand-bg/80!">
         <Container maxWidth="lg">
           <Toolbar disableGutters>
-            <Typography variant="h6" sx={{ flexGrow: 1, fontWeight: 800, letterSpacing: -1 }}>
+            <Typography variant="h6" sx={{ grow: 1, fontWeight: 800, letterSpacing: -1 }}>
               CONRAD<span className="text-brand-accent">.</span>
             </Typography>
             <Box className="hidden md:flex gap-6 items-center">
@@ -53,7 +52,7 @@ function App() {
                 </Typography>
                 <Typography variant="h1" sx={{ fontSize: { xs: '3rem', md: '4.5rem' }, fontWeight: 900, mt: 2, mb: 3, lineHeight: 1.1 }}>
                   Engineering <br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">
+                  <span className="text-transparent bg-clip-text bg-linear-to-r from-emerald-400 to-cyan-400">
                     Impactful Systems.
                   </span>
                 </Typography>
@@ -66,13 +65,14 @@ function App() {
                     View My Work
                   </Button>
                   <Button variant="outlined" onClick={copyEmail}
+                    startIcon={copied ? <CheckIcon /> : <ContentCopyIcon />}
                     sx={{ borderColor: 'rgba(255,255,255,0.1)', color: 'white', borderRadius: 2, px: 3 }}>
-                    {copied ? 'Email Copied!' : 'Copy Email'}
+                    {copied ? 'Copied!' : 'Copy Email'}
                   </Button>
                 </div>
               </motion.div>
             </Grid>
-            {/* PROFILE IMAGE SLOT */}
+            
             <Grid item xs={12} md={5} className="flex justify-center">
               <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ delay: 0.2 }}>
                 <div className="profile-glow w-64 h-64 md:w-80 md:h-80">
@@ -88,7 +88,7 @@ function App() {
         </Container>
       </section>
 
-      {/* FEATURED WORK: MILKWIZE */}
+      {/* MILKWIZE HIGHLIGHT */}
       <section id="work" className="py-20">
         <Container maxWidth="lg">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
@@ -96,7 +96,7 @@ function App() {
             <div className="mt-12">
               <div className="glass-panel rounded-3xl overflow-hidden grid grid-cols-1 lg:grid-cols-2">
                 <div className="p-8 md:p-12 flex flex-col justify-center">
-                  <span className="text-brand-accent font-bold text-sm tracking-widest mb-4">PRIMARY PROJECT</span>
+                  <span className="text-brand-accent font-bold text-sm tracking-widest mb-4 uppercase">Primary Project</span>
                   <Typography variant="h3" className="font-bold mb-6">MilkWize</Typography>
                   <Typography variant="body1" className="text-slate-300 mb-6 leading-relaxed">
                     A professional-grade dairy management ecosystem built to solve connectivity and data challenges in East African agriculture. It empowers farmers to transform raw milk data into actionable financial and biological insights.
@@ -115,7 +115,7 @@ function App() {
                 <div className="bg-slate-900/50 p-6 flex items-center justify-center">
                   <img 
                     src="/assets/screenshots/milkwize-preview.png" 
-                    alt="MilkWize App Interface" 
+                    alt="MilkWize Preview" 
                     className="rounded-xl shadow-2xl border border-white/5"
                   />
                 </div>
@@ -125,13 +125,13 @@ function App() {
         </Container>
       </section>
 
-      {/* OTHER WORKS (THE GRID OF 5 OTHERS) */}
+      {/* PROJECT GRID */}
       <section className="pb-32">
         <Container maxWidth="lg">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <ProjectCard 
               title="African Legend: Mobile"
-              desc="High-performance mobile game with culture-rich storytelling and real-time multiplayer."
+              desc="High-performance mobile game with culture-rich storytelling and multiplayer."
               img="/assets/screenshots/game-preview.png"
               tags={['Kotlin', 'Supabase']}
               link="#"
@@ -145,7 +145,7 @@ function App() {
             />
             <ProjectCard 
               title="Microloan Tracker"
-              desc="Full-stack financial dashboard for tracking loan dispersion and repayment metrics."
+              desc="Full-stack financial dashboard for tracking loan dispersion metrics."
               img="/assets/screenshots/microloan-tracker.png"
               tags={['Node.js', 'MUI']}
               link="https://microloan-tracker.vercel.app/"
@@ -159,7 +159,7 @@ function App() {
             />
             <ProjectCard 
               title="EESCL Uganda"
-              desc="Responsive WordPress-based management site for environmental consultancy."
+              desc="Responsive management site for environmental consultancy services."
               img="/assets/screenshots/EESCLUG.png"
               tags={['WordPress', 'UX']}
               link="https://eescluganda.wuaze.com/?i=1"
@@ -168,14 +168,11 @@ function App() {
         </Container>
       </section>
 
-      {/* CONTACT SECTION */}
+      {/* CONTACT */}
       <section id="contact" className="py-20 bg-slate-950/30">
         <Container maxWidth="sm">
           <div className="text-center">
             <Typography variant="h3" className="font-bold mb-4">Have a project in mind?</Typography>
-            <Typography variant="body1" className="text-slate-400 mb-10">
-              I’m always open to discussing new opportunities or technical challenges.
-            </Typography>
             <Button 
               variant="contained" 
               href="mailto:cpbmbaz57@gmail.com" 
@@ -197,7 +194,7 @@ function ProjectCard({ title, desc, img, link, tags }) {
       <div className="h-48 overflow-hidden bg-slate-900">
         <img src={img} alt={title} className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" />
       </div>
-      <div className="p-6 flex flex-col flex-grow">
+      <div className="p-6 flex flex-col grow">
         <div className="flex gap-2 mb-3">
           {tags.map(tag => (
             <span key={tag} className="text-[10px] uppercase font-bold text-brand-accent tracking-widest">{tag}</span>
