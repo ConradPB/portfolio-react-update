@@ -88,4 +88,84 @@ function App() {
         </Container>
       </section>
 
-      
+      {/* FEATURED WORK: MILKWIZE */}
+      <section id="work" className="py-20">
+        <Container maxWidth="lg">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
+            <h2>Featured Impact</h2>
+            <div className="mt-12">
+              <div className="glass-panel rounded-3xl overflow-hidden grid grid-cols-1 lg:grid-cols-2">
+                <div className="p-8 md:p-12 flex flex-col justify-center">
+                  <span className="text-brand-accent font-bold text-sm tracking-widest mb-4">PRIMARY PROJECT</span>
+                  <Typography variant="h3" className="font-bold mb-6">MilkWize</Typography>
+                  <Typography variant="body1" className="text-slate-300 mb-6 leading-relaxed">
+                    A professional-grade dairy management ecosystem built to solve connectivity and data challenges in East African agriculture. It empowers farmers to transform raw milk data into actionable financial and biological insights.
+                  </Typography>
+                  <div className="flex flex-wrap gap-2 mb-8">
+                    {['Kotlin', 'Offline-First', 'AgTech', 'Data Analytics'].map(tag => (
+                      <span key={tag} className="px-3 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-bold rounded-full border border-emerald-500/20">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <Typography variant="caption" className="text-brand-text-muted italic">
+                    Currently in development — Case study coming soon.
+                  </Typography>
+                </div>
+                <div className="bg-slate-900/50 p-6 flex items-center justify-center">
+                  <img 
+                    src="/assets/screenshots/milkwize-preview.png" 
+                    alt="MilkWize App Interface" 
+                    className="rounded-xl shadow-2xl border border-white/5"
+                  />
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </Container>
+      </section>
+
+      {/* OTHER WORKS (THE GRID OF 5 OTHERS) */}
+      <section className="pb-32">
+        <Container maxWidth="lg">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <ProjectCard 
+              title="African Legend: Mobile"
+              desc="High-performance mobile game with culture-rich storytelling and real-time multiplayer."
+              img="/assets/screenshots/game-preview.png"
+              tags={['Kotlin', 'Supabase']}
+              link="#"
+            />
+            <ProjectCard 
+              title="ShopSphere"
+              desc="Modern E-Commerce Store with real-time inventory and smooth animations."
+              img="/assets/screenshots/ShopSphere.png"
+              tags={['React', 'Next.js']}
+              link="https://shop-sphere-rouge-iota.vercel.app/"
+            />
+            <ProjectCard 
+              title="Microloan Tracker"
+              desc="Full-stack financial dashboard for tracking loan dispersion and repayment metrics."
+              img="/assets/screenshots/microloan-tracker.png"
+              tags={['Node.js', 'MUI']}
+              link="https://microloan-tracker.vercel.app/"
+            />
+            <ProjectCard 
+              title="Crypto Trends"
+              desc="Visualizing real-time crypto analytics using D3.js and public price APIs."
+              img="/assets/screenshots/crypto-trends.png"
+              tags={['API', 'D3.js']}
+              link="https://crypto-trends-kohl.vercel.app/"
+            />
+            <ProjectCard 
+              title="EESCL Uganda"
+              desc="Responsive WordPress-based management site for environmental consultancy."
+              img="/assets/screenshots/EESCLUG.png"
+              tags={['WordPress', 'UX']}
+              link="https://eescluganda.wuaze.com/?i=1"
+            />
+          </div>
+        </Container>
+      </section>
+
+    
