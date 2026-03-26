@@ -44,7 +44,7 @@ function App() {
         </Container>
       </AppBar>
 
-      {/* HERO SECTION - Text Left, Image Right */}
+      {/* HERO SECTION */}
       <section className="pt-24 pb-20 px-4">
         <Container maxWidth="lg">
           <Grid container spacing={8} alignItems="center">
@@ -97,10 +97,10 @@ function App() {
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
             <h2>Featured Impact</h2>
             <div className="mt-12">
-              <div className="glass-panel rounded-3xl overflow-hidden grid grid-cols-1 lg:grid-cols-2 min-h-[450px]">
+              <div className="glass-panel rounded-3xl overflow-hidden grid grid-cols-1 lg:grid-cols-2 min-h-112.5">
                 <div className="p-8 md:p-12 flex flex-col justify-center">
                   <div className="flex items-center gap-2 mb-4">
-                    <span className="w-8 h-[1px] bg-brand-accent"></span>
+                    <span className="w-8 h-px bg-brand-accent"></span>
                     <span className="text-brand-accent font-bold text-xs tracking-widest uppercase">Major Project 2026</span>
                   </div>
                   <Typography variant="h3" className="font-bold mb-6">MilkWize</Typography>
@@ -119,7 +119,6 @@ function App() {
                   </Typography>
                 </div>
                 <div className="bg-slate-900/40 p-10 flex items-center justify-center relative overflow-hidden">
-                   {/* Placeholder for MilkWize Screens */}
                    <div className="w-full h-full rounded-2xl bg-linear-to-br from-slate-800 to-slate-900 border border-white/10 shadow-2xl flex items-center justify-center text-slate-700">
                       <Typography variant="h6" className="font-bold opacity-20 rotate-[-15deg]">DASHBOARD PREVIEW</Typography>
                    </div>
@@ -130,7 +129,7 @@ function App() {
         </Container>
       </section>
 
-      {/* TOP 3 GRID */}
+      {/* REST OF THE GRID... (ShopSphere, Microloan, African Legend, etc.) */}
       <section className="pb-12">
         <Container maxWidth="lg">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -158,7 +157,6 @@ function App() {
             />
           </div>
 
-          {/* SHOW MORE TOGGLE */}
           <div className="flex justify-center mt-12">
             <Button 
               onClick={() => setShowMore(!showMore)}
