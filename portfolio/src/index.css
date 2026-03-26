@@ -1,37 +1,54 @@
 @import "tailwindcss";
 
 @theme {
+  /* Brand Colors - Now available as text-brand-bg, bg-brand-accent, etc. */
   --color-brand-bg: #030712;
   --color-brand-card: #0f172a;
-  --color-brand-accent: #10b981; /* Emerald */
+  --color-brand-accent: #10b981;
   --color-brand-text-muted: #94a3b8;
   
   --font-sans: "Inter", "Poppins", ui-sans-serif, system-ui;
 }
 
-/* ---------- BASE REFINEMENTS ---------- */
+/* ---------- GLOBAL REFINEMENTS ---------- */
 :root {
   color-scheme: dark;
 }
 
 body {
-  @apply bg-brand-bg text-slate-50 antialiased selection:bg-emerald-500/30;
+  background-color: var(--color-brand-bg);
+  color: #f8fafc;
+  -webkit-font-smoothing: antialiased;
   margin: 0;
   scroll-behavior: smooth;
 }
 
-/* ---------- CUSTOM COMPONENTS ---------- */
-.glass-panel {
-  @apply bg-slate-900/40 backdrop-blur-xl border border-white/5 shadow-2xl;
+/* ---------- CUSTOM UTILITIES (The v4 Way) ---------- */
+
+@utility glass-panel {
+  background-color: rgba(15, 23, 42, 0.4); /* Slate-900/40 */
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
 
-.hero-gradient {
+@utility hero-gradient {
   background: radial-gradient(circle at 50% -20%, #1e293b 0%, #030712 100%);
 }
 
-/* Refined H2 with modern underline */
+@utility profile-glow {
+  position: relative;
+  border-radius: 9999px;
+  padding: 4px;
+  background: linear-gradient(to top right, var(--color-brand-accent), #06b6d4);
+  box-shadow: 0 0 40px rgba(16, 185, 129, 0.2);
+}
+
+/* ---------- REFINED COMPONENTS ---------- */
+
+/* Custom H2 Underline */
 h2 {
-  @apply text-3xl font-bold tracking-tight mb-4 relative inline-block;
+  @apply text-3xl font-bold tracking-tight mb-8 relative inline-block;
 }
 
 h2::after {
@@ -39,7 +56,7 @@ h2::after {
   @apply absolute -bottom-2 left-0 w-12 h-1 bg-brand-accent rounded-full;
 }
 
-/* ---------- ANIMATIONS ---------- */
+/* Animated Nav Links */
 .nav-link {
   @apply relative text-sm font-medium text-slate-400 transition-colors hover:text-white px-3 py-2;
 }
@@ -51,10 +68,4 @@ h2::after {
 
 .nav-link:hover::after {
   @apply w-full;
-}
-
-/* Profile Image Glow */
-.profile-glow {
-  @apply relative rounded-full p-1 bg-gradient-to-tr from-emerald-500 to-cyan-500;
-  box-shadow: 0 0 40px rgba(16, 185, 129, 0.2);
 }
