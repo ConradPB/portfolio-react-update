@@ -168,4 +168,28 @@ function App() {
         </Container>
       </section>
 
-    
+      {/* CONTACT SECTION */}
+      <section id="contact" className="py-20 bg-slate-950/30">
+        <Container maxWidth="sm">
+          <div className="text-center">
+            <Typography variant="h3" className="font-bold mb-4">Have a project in mind?</Typography>
+            <Typography variant="body1" className="text-slate-400 mb-10">
+              I’m always open to discussing new opportunities or technical challenges.
+            </Typography>
+            <Button 
+              variant="contained" 
+              href="mailto:cpbmbaz57@gmail.com" 
+              startIcon={<EmailIcon />}
+              sx={{ py: 2, px: 6, bgcolor: 'white', color: 'black', '&:hover': { bgcolor: '#e2e8f0' }, borderRadius: 3, fontWeight: 'bold' }}
+            >
+              Get In Touch
+            </Button>
+          </div>
+        </Container>
+      </section>
+    </div>
+  );
+}
+
+
+export default App;
