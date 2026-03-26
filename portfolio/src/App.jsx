@@ -197,5 +197,65 @@ function App() {
         </Container>
       </section>
 
-     
+      {/* CONTACT */}
+      <section id="contact" className="py-32">
+        <Container maxWidth="sm">
+          <div className="glass-panel p-12 rounded-3xl text-center border-brand-accent/20!">
+            <Typography variant="h4" className="font-bold mb-4">Let&apos;s build something.</Typography>
+            <Typography variant="body1" className="text-slate-400 mb-8">
+              Available for remote engineering roles and technical consulting.
+            </Typography>
+            <Button 
+              variant="contained" 
+              href="mailto:cpbmbaz57@gmail.com" 
+              startIcon={<EmailIcon />}
+              sx={{ py: 2, px: 6, bgcolor: 'white', color: 'black', '&:hover': { bgcolor: '#e2e8f0' }, borderRadius: 2, fontWeight: 'bold' }}
+            >
+              Say Hello
+            </Button>
+          </div>
+        </Container>
+      </section>
+    </div>
+  );
+}
+
+function ProjectCard({ title, desc, img, link, tags, isComingSoon = false }) {
+  return (
+    <motion.div whileHover={{ y: -8 }} className="glass-panel rounded-2xl overflow-hidden flex flex-col h-full border-white/5!">
+      <div className="h-48 overflow-hidden bg-slate-900 relative">
+        <img src={img} alt={title} className={`w-full h-full object-cover transition-opacity ${isComingSoon ? 'opacity-30' : 'opacity-80 hover:opacity-100'}`} />
+        {isComingSoon && (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <span className="px-3 py-1 bg-brand-accent/20 text-brand-accent border border-brand-accent/30 rounded-full text-[10px] font-bold uppercase tracking-widest">In Development</span>
+          </div>
+        )}
+      </div>
+      <div className="p-6 flex flex-col grow">
+        <div className="flex gap-2 mb-3">
+          {tags.map(tag => (
+            <span key={tag} className="text-[10px] uppercase font-bold text-brand-accent tracking-widest">{tag}</span>
+          ))}
+        </div>
+        <Typography variant="h6" className="font-bold mb-2">{title}</Typography>
+        <Typography variant="body2" className="text-slate-400 mb-6">{desc}</Typography>
+        {!isComingSoon && (
+          <Button href={link} target="_blank" className="text-brand-accent! p-0 font-bold! text-xs! self-start">
+            View Project →
+          </Button>
+        )}
+      </div>
+    </motion.div>
+  );
+}
+
+ProjectCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+  isComingSoon: PropTypes.bool,
+};
+
 export default App;
